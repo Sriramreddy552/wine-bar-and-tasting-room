@@ -1,0 +1,281 @@
+/*=========================
+GOOGLE FONT
+=========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*=========================
+RESET
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'cormorant garamond',inter;;
+    background:#faf8f4;
+}
+
+/*=========================
+ROOT VARIABLES
+=========================*/
+
+:root{
+
+    --primary:#7B1E3C;
+    --secondary:goldenrod;
+    --dark:#222;
+    --text:#666;
+    --white:#fff;
+    --light:#f8f5f1;
+
+}
+
+/*=========================
+SECTION
+=========================*/
+
+.wine-categories{
+
+    padding:100px 8%;
+    background:var(--light);
+
+}
+
+.section-title{
+
+    max-width:750px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:70px;
+
+}
+
+.section-title span{
+
+    color:var(--secondary);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:600;
+
+}
+
+.section-title h2{
+
+    font-family:'cormorant garamond',inter;;
+    font-size:48px;
+    margin:15px 0;
+    color:var(--dark);
+
+}
+
+.section-title p{
+
+    color:var(--text);
+    line-height:1.8;
+
+}
+
+/*=========================
+GRID
+=========================*/
+
+.category-container{
+
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+/*=========================
+CARD
+=========================*/
+
+.category-card{
+
+    background:var(--white);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.category-icon{
+
+    height:140px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:50px;
+
+    color:#fff;
+
+}
+
+.red{
+    background:#7B1E3C;
+}
+
+.white{
+    background:goldenrod;
+}
+
+.rose{
+    background:#666;
+}
+
+.sparkling{
+    background:goldenrod;
+}
+
+.dessert{
+    background:#666;
+}
+
+.orange{
+    background:#7B1E3C;
+}
+
+.category-card h3{
+
+    font-family:'cormorant garamond',inter;;
+    font-size:30px;
+
+    padding:25px 25px 10px;
+
+    color:var(--dark);
+
+}
+
+.category-card p{
+
+    padding:0 25px;
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+.category-card a{
+
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    margin:25px;
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.category-card a:hover{
+
+    color:var(--secondary);
+
+}
+
+.category-card a i{
+
+    transition:.3s;
+
+}
+
+.category-card a:hover i{
+
+    transform:translateX(5px);
+
+}
+
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media(max-width:991px){
+
+.category-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.wine-categories{
+
+    padding:70px 20px;
+
+}
+
+.category-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.category-icon{
+
+    height:120px;
+    font-size:42px;
+
+}
+
+.category-card h3{
+
+    font-size:26px;
+
+}
+
+}

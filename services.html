@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wine Bar - About</title>
+ 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+ 
+<body>
+  <div id="navbar"></div>
+ 
+ 
+  <section class="services-hero">
+    <div class="wrap">
+      <p class="eyebrow">The Tasting Room &mdash; Services</p>
+      <h1>Every visit, poured <span>with intention.</span></h1>
+      <p class="lede">From an evening flight at the bar to a private cellar dinner for twelve, each experience at
+        Vintner&rsquo;s Reserve is built around one idea &mdash; the wine should do the talking, and we make sure it has
+        something worth saying.</p>
+      <div class="hero-actions">
+        <a href="#offerings" class="btn-gold">Explore Offerings</a>
+        <a href="#book" class="btn-outline-wine">Reserve a Table</a>
+      </div>
+    </div>
+  </section>
+ 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var hero = document.querySelector('.services-hero');
+      var animatedEls = hero.querySelectorAll('.eyebrow, h1, .lede, .hero-actions');
+ 
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animatedEls.forEach(function (el) {
+              el.style.animationPlayState = 'running';
+            });
+          }
+        });
+      }, { threshold: 0.2 });
+ 
+      observer.observe(hero);
+    });
+  </script>
+ 
+ 
+  <section class="offerings" id="offerings">
+    <div class="wrap">
+      <div class="section-title">
+        <span>What We Pour</span>
+        <h2>Six ways to taste with us</h2>
+        <p>Every service below can be booked on its own or layered into a longer evening.</p>
+      </div>
+ 
+      <div class="offer-grid" id="offerGrid">
+        <div class="offer-card">
+          <div class="thumb-wrap">
+            <img class="thumb" src="../images/service1.avif" alt="Sommelier pouring a glass of red wine">
+          </div>
+          <div class="body">
+            <h3>Guided Wine Tastings</h3>
+            <p>A seated flight of six pours, walked through by our sommelier from lightest to boldest.</p>
+            <a class="card-link" href="servicedetails.html">View Details <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="offer-card">
+          <div class="thumb-wrap">
+            <img class="thumb" src="../images/service2.avif" alt="Candlelit wine cellar with barrels">
+          </div>
+          <div class="body">
+            <h3>Private Cellar Events</h3>
+            <p>Our underground cellar, set for up to twenty guests, for celebrations that call for candlelight.</p>
+            <a class="card-link" href="servicedetails.html">View Details <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="offer-card">
+          <div class="thumb-wrap">
+            <img class="thumb" src="../images/service3.avif" alt="Set dining table for a pairing dinner">
+          </div>
+          <div class="body">
+            <h3>Sommelier Pairing Dinners</h3>
+            <p>A five-course menu built glass by glass with our kitchen, one wine at a time.</p>
+            <a class="card-link" href="servicedetails.html">View Details <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="offer-card">
+          <div class="thumb-wrap">
+            <img class="thumb" src="../images/service4.avif" alt="Rows of wine bottles in storage">
+          </div>
+          <div class="body">
+            <h3>Reserve Wine Club</h3>
+            <p>Two curated bottles a month, chosen from producers you won&rsquo;t find on a shelf.</p>
+            <a class="card-link" href="servicedetails.html">View Details <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="offer-card">
+          <div class="thumb-wrap">
+            <img class="thumb" src="../images/service5.jpg" alt="Sunlit vineyard rows">
+          </div>
+          <div class="body">
+            <h3>Cellar Tours &amp; Storage</h3>
+            <p>A walk through our barrel room, plus private storage lockers for your own collection.</p>
+            <a class="card-link" href="servicedetails.html">View Details <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="offer-card">
+          <div class="thumb-wrap">
+            <img class="thumb" src="../images/service6.jpg" alt="Group gathered around a tasting table">
+          </div>
+          <div class="body">
+            <h3>Corporate Tastings</h3>
+            <p>Off-site team evenings built around a relaxed, unhurried glass rather than a slideshow.</p>
+            <a class="card-link" href="servicedetails.html">View Details <span class="arrow">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <script>
+    (function () {
+      var cards = document.querySelectorAll('#offerGrid .offer-card');
+      cards.forEach(function (card, i) {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(18px)';
+        card.style.transition = 'opacity 0.6s ease ' + (i * 0.08) + 's, transform 0.6s ease ' + (i * 0.08) + 's';
+      });
+ 
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+ 
+      cards.forEach(function (card) { observer.observe(card); });
+ 
+      // Optional manual theme toggle support: add [data-theme="dark"] or
+      // [data-theme="light"] on the .offerings section to override system preference.
+      // Example: document.querySelector('.offerings').dataset.theme = 'dark';
+    })();
+  </script>
+ 
+  <section class="signature">
+    <div class="section-title">
+      <span>What We Pour</span>
+      <h2>Six ways to taste with us</h2>
+      <p>Every service below can be booked on its own or layered into a longer evening.</p>
+    </div>
+    <div class="wrap">
+      <div class="visual">
+        <img src="../images/six.jpg" alt="Sommelier presenting a bottle of reserve wine at a candlelit table">
+        <span class="tag">THE RESERVE ROOM</span>
+      </div>
+      <div class="copy">
+        <p class="eyebrow">Signature Experience</p>
+        <h2>The Reserve Room Tasting</h2>
+        <p>Our most requested evening: eight guests, one long table, and a flight drawn entirely from library vintages
+          that rarely leave the cellar. The sommelier stays at the table for the full two hours &mdash; no rotating
+          between parties.</p>
+        <div class="attrs">
+          <div><strong>8</strong><span>Guests Max</span></div>
+          <div><strong>7</strong><span>Library Pours</span></div>
+          <div><strong>2 hrs</strong><span>Seated Duration</span></div>
+        </div>
+        <a href="servicedetails.html" class="btn-gold">Reserve the Room</a>
+      </div>
+    </div>
+  </section>
+ 
+ 
+  <section class="process">
+    <div class="section-title">
+      <span>The Process</span>
+      <h2>How a booking unfolds</h2>
+      <p>Every service below can be booked on its own or layered into a longer evening.</p>
+    </div>
+    <div class="wrap">
+      <div class="steps" id="processSteps">
+        <div class="step">
+          <div class="dot">1</div>
+          <h3>Reserve</h3>
+          <p>Pick a service and a time that suits your evening.</p>
+        </div>
+        <div class="step">
+          <div class="dot">2</div>
+          <h3>Arrive</h3>
+          <p>We seat you at the bar, a table, or the cellar room.</p>
+        </div>
+        <div class="step">
+          <div class="dot">3</div>
+          <h3>Taste</h3>
+          <p>Your sommelier pours and talks you through each glass.</p>
+        </div>
+        <div class="step">
+          <div class="dot">4</div>
+          <h3>Take Home</h3>
+          <p>Order any bottle you loved at member pricing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <script>
+    (function () {
+      var steps = document.querySelectorAll('#processSteps .step');
+      steps.forEach(function (step, i) {
+        step.style.opacity = '0';
+        step.style.transform = 'translateY(18px)';
+        step.style.transition = 'opacity 0.6s ease ' + (i * 0.12) + 's, transform 0.6s ease ' + (i * 0.12) + 's';
+      });
+ 
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+ 
+      steps.forEach(function (step) { observer.observe(step); });
+    })();
+  </script>
+ 
+  <section class="cta-book" id="book">
+ 
+    <div class="wrap">
+      <p class="eyebrow">Reserve Your Table</p>
+      <h2>Ready to book a service?</h2>
+      <div class="rule"></div>
+      <p>Tell us the date and party size &mdash; we&rsquo;ll confirm within the hour.</p>
+ 
+      <form class="book-form" id="bookingForm">
+        <input type="text" id="guestName" placeholder="Your Name" required>
+        <input type="date" id="visitDate" required>
+        <select id="partySize">
+          <option value="" disabled selected>Party Size</option>
+          <option>1&ndash;2 Guests</option>
+          <option>3&ndash;4 Guests</option>
+          <option>5&ndash;8 Guests</option>
+          <option>9+ Guests</option>
+        </select>
+        <button type="submit" class="btn-gold">Request Reservation</button>
+      </form>
+      <p class="form-msg" id="formMsg"></p>
+    </div>
+  </section>
+ 
+ 
+ 
+  <script>
+    (function () {
+      var form = document.getElementById('bookingForm');
+      var msg = document.getElementById('formMsg');
+ 
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('guestName').value.trim();
+        var date = document.getElementById('visitDate').value;
+        var size = document.getElementById('partySize').value;
+ 
+        if (!name || !date || !size) {
+          msg.textContent = 'Please fill in every field so we can confirm your table.';
+          msg.style.color = '#e0c25f';
+          return;
+        }
+ 
+        var chosen = new Date(date);
+        var today = new Date();
+        today.setHours(0, 0, 0, 0);
+        if (chosen < today) {
+          msg.textContent = 'Please choose a date from today onward.';
+          msg.style.color = '#e0c25f';
+          return;
+        }
+ 
+        msg.style.color = '#e8c893';
+        msg.textContent = 'Thank you, ' + name + ' \u2014 your request for ' + size.toLowerCase() + ' on ' + chosen.toDateString() + ' has been received.';
+        form.reset();
+      });
+    })();
+  </script>
+ 
+ 
+ 
+  <div id="footer"></div>
+  <script src="component.js"></script>
+  <script src="service.js"></script>
+</body>
+ 
+</html>

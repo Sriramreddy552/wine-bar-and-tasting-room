@@ -1,0 +1,332 @@
+/*==============================
+GOOGLE FONT
+==============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*==============================
+RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'cormorant garamond',inter;;
+    background:#faf8f4;
+}
+
+/*==============================
+COLORS
+==============================*/
+
+:root{
+
+    --primary:#8B1E3F;
+    --secondary:#C89B5E;
+    --dark:#1d1d1d;
+    --text:#666;
+    --white:#fff;
+    --light:#f8f5f0;
+
+}
+
+/*==============================
+SECTION
+==============================*/
+
+.reserve-section{
+
+    padding:100px 8%;
+    background:var(--light);
+
+}
+
+.reserve-container{
+
+    max-width:1300px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+
+}
+
+/*==============================
+IMAGE
+==============================*/
+
+.reserve-image{
+
+    flex:1;
+    position:relative;
+
+}
+
+.reserve-image img{
+
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+    transition:.5s;
+
+}
+
+.reserve-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.wine-badge{
+
+    position:absolute;
+    bottom:30px;
+    left:30px;
+
+    background:rgba(255,255,255,.95);
+
+    padding:18px 28px;
+
+    border-radius:50px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.wine-badge i{
+
+    font-size:20px;
+
+}
+
+/*==============================
+CONTENT
+==============================*/
+
+.reserve-content{
+
+    flex:1;
+
+}
+
+.sub-title{
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+.reserve-content h2{
+
+    font-family:'cormorant garamond',inter;;
+
+    font-size:52px;
+
+    color:var(--dark);
+
+    margin:15px 0;
+
+}
+
+.reserve-content p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/*==============================
+FORM
+==============================*/
+
+form{
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.input-box{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.input-box input,
+.input-box select,
+textarea{
+
+    width:100%;
+
+    padding:18px 20px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.4s;
+
+    background:#fff;
+
+}
+
+textarea{
+
+    resize:none;
+
+    height:140px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:var(--secondary);
+
+    box-shadow:0 0 15px rgba(200,155,94,.3);
+
+}
+
+button{
+
+    width:220px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    transition:.4s;
+
+}
+
+button:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-5px);
+
+}
+
+button i{
+
+    transition:.4s;
+
+}
+
+button:hover i{
+
+    transform:translateX(6px);
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:991px){
+
+.reserve-container{
+
+    flex-direction:column;
+
+}
+
+.reserve-content h2{
+
+    font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.input-box{
+
+    flex-direction:column;
+
+}
+
+.reserve-content h2{
+
+    font-size:34px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.reserve-section{
+
+    padding:70px 20px;
+
+}
+
+.reserve-content h2{
+
+    font-size:30px;
+
+}
+
+.wine-badge{
+
+    font-size:14px;
+
+    padding:15px 20px;
+
+}
+
+}

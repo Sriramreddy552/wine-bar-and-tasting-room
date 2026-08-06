@@ -1,0 +1,13 @@
+
+
+const rtlBtn = document.getElementById("rtlBtn");
+const darkBtn = document.getElementById("darkBtn");
+
+rtlBtn.onclick = () => {
+    document.body.classList.toggle("rtl");
+};
+
+darkBtn.onclick = () => {
+    document.body.classList.toggle("dark");
+};
+

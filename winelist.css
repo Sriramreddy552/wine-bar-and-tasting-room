@@ -1,0 +1,286 @@
+/*=========================
+GOOGLE FONT
+=========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*=========================
+RESET
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'cormorant garamond',inter;;
+    background:#faf7f2;
+}
+
+/*=========================
+ROOT
+=========================*/
+
+:root{
+
+    --primary:#7A1F3D;
+    --secondary:#C9A227;
+    --white:#ffffff;
+    --light:#F9F5F0;
+    --dark:#222;
+    --text:#666;
+
+}
+
+/*=========================
+SECTION
+=========================*/
+
+.wine-list{
+
+    padding:100px 8%;
+    background:var(--light);
+
+}
+
+.section-title{
+
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    color:var(--secondary);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:600;
+    font-size:14px;
+
+}
+
+.section-title h2{
+
+    font-family:'cormorant garamond',inter;;
+    font-size:48px;
+    color:var(--dark);
+    margin:15px 0;
+
+}
+
+.section-title p{
+
+    color:var(--text);
+    line-height:1.8;
+
+}
+
+/*=========================
+CARDS
+=========================*/
+
+.wine-container{
+
+    max-width:1300px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+
+}
+
+.wine-card{
+
+    background:var(--white);
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.wine-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.wine-icon{
+
+    width:80px;
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#f5ece3;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:var(--primary);
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.wine-card h3{
+
+    font-family:'cormorant garamond',inter;;
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+    color:var(--dark);
+
+}
+
+.wine-card p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.wine-footer{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.price{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.rating{
+
+    color:var(--secondary);
+
+    font-weight:600;
+
+}
+
+.rating i{
+
+    margin-right:5px;
+
+}
+
+/*=========================
+BUTTON
+=========================*/
+
+.wine-btn{
+
+    text-align:center;
+    margin-top:60px;
+
+}
+
+.wine-btn a{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    text-decoration:none;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.wine-btn a:hover{
+
+    background:var(--secondary);
+
+    color:#111;
+
+}
+
+.wine-btn a i{
+
+    transition:.3s;
+
+}
+
+.wine-btn a:hover i{
+
+    transform:translateX(6px);
+
+}
+
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media(max-width:768px){
+
+    .wine-list{
+
+        padding:70px 20px;
+
+    }
+
+    .section-title h2{
+
+        font-size:36px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+    .wine-card{
+
+        padding:25px;
+
+    }
+
+}
