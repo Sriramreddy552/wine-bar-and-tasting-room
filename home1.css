@@ -35,7 +35,7 @@ HERO
 
 .hero{
 
-padding:140px 8% 80px;
+padding:60px 8% 80px;
 background:linear-gradient(135deg,#f9f4ee,#ffffff);
 
 }
@@ -1518,7 +1518,7 @@ BUTTON
 
 .why-btn{
 
-    margin-top:80px;
+    margin-top:70px;
 
     text-align:center;
 
@@ -1531,6 +1531,7 @@ BUTTON
     align-items:center;
 
     gap:14px;
+    margin-bottom: 30px;
 
     text-decoration:none;
 

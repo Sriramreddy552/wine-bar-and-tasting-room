@@ -530,7 +530,7 @@ CONTENT
 
     font-family:'cormorant garamond',inter;;
 
-    font-size:40px;
+    font-size:30px;
 
     line-height:1.3;
 
@@ -757,7 +757,7 @@ CONTENT
 
     font-family:'cormorant garamond',inter;;
 
-    font-size:28px;
+    font-size:30px;
 
     color:var(--dark);
 
@@ -946,7 +946,7 @@ REGION
 
     color:var(--dark);
 
-    font-size:28px;
+    font-size:30px;
 
     margin-bottom:6px;
 
@@ -1098,7 +1098,7 @@ WINEMAKERS
 .maker-info h3{
 
     font-family:'cormorant garamond',inter;;
-    font-size:40px;
+    font-size:30px;
 
 }
 
@@ -1935,7 +1935,7 @@ Samsung Galaxy S8+
     }
 
     .region h3{
-        font-size:22px;
+        font-size:30px;
     }
 
     .region span{
@@ -1962,7 +1962,7 @@ Samsung Galaxy S8+
     }
 
     .maker-info h3{
-        font-size:28px;
+        font-size:30px;
     }
 
     /* CTA */
@@ -2058,7 +2058,7 @@ iPad Mini
     }
 
     .region h3{
-        font-size:24px;
+        font-size:30px;
     }
 
     /* Makers */
@@ -2125,7 +2125,7 @@ iPad Pro
     }
 
     .region h3{
-        font-size:26px;
+        font-size:30px;
     }
 
     /* Makers */

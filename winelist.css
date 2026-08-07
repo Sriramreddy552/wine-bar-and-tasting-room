@@ -284,3 +284,102 @@ RESPONSIVE
     }
 
 }
+/*====================================
+            DARK MODE
+====================================*/
+
+body.dark-mode .wine-list{
+    background:#111111;
+}
+
+/*==============================
+        SECTION TITLE
+==============================*/
+
+body.dark-mode .section-title span{
+    color:var(--secondary);
+}
+
+body.dark-mode .section-title h2{
+    color:#ffffff;
+}
+
+body.dark-mode .section-title p{
+    color:#c8c8c8;
+}
+
+/*==============================
+        WINE CARD
+==============================*/
+
+body.dark-mode .wine-card{
+    background:#1b1b1b;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.40);
+}
+
+body.dark-mode .wine-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 22px 45px rgba(0,0,0,.55);
+}
+
+/*==============================
+        WINE ICON
+==============================*/
+
+body.dark-mode .wine-icon{
+    background:#2b2b2b;
+    color:var(--secondary);
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+/*==============================
+        CARD CONTENT
+==============================*/
+
+body.dark-mode .wine-card h3{
+    color:#ffffff;
+}
+
+body.dark-mode .wine-card p{
+    color:#c4c4c4;
+}
+
+/*==============================
+        FOOTER
+==============================*/
+
+body.dark-mode .price{
+    color:var(--secondary);
+}
+
+body.dark-mode .rating{
+    color:var(--secondary);
+}
+
+body.dark-mode .rating i{
+    color:var(--secondary);
+}
+
+/*==============================
+        BUTTON
+==============================*/
+
+body.dark-mode .wine-btn a{
+    background:var(--primary);
+    color:#ffffff;
+}
+
+body.dark-mode .wine-btn a:hover{
+    background:var(--secondary);
+    color:#111111;
+}
+
+/*==============================
+        TEXT SELECTION
+==============================*/
+
+body.dark-mode ::selection{
+    background:var(--secondary);
+    color:#111111;
+}

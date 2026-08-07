@@ -279,3 +279,109 @@ RESPONSIVE
 }
 
 }
+/*====================================
+            DARK MODE
+====================================*/
+
+body.dark-mode .wine-categories{
+    background:#111111;
+}
+
+/*==============================
+        SECTION TITLE
+==============================*/
+
+body.dark-mode .section-title span{
+    color:goldenrod;
+}
+
+body.dark-mode .section-title h2{
+    color:#ffffff;
+}
+
+body.dark-mode .section-title p{
+    color:#c5c5c5;
+}
+
+/*==============================
+        CATEGORY CARD
+==============================*/
+
+body.dark-mode .category-card{
+    background:#1b1b1b;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+body.dark-mode .category-card:hover{
+    box-shadow:0 22px 45px rgba(0,0,0,.55);
+}
+
+/*==============================
+        CATEGORY ICONS
+==============================*/
+
+body.dark-mode .red{
+    background:#7B1E3C;
+}
+
+body.dark-mode .white{
+    background:goldenrod;
+}
+
+body.dark-mode .rose{
+    background:#555555;
+}
+
+body.dark-mode .sparkling{
+    background:goldenrod;
+}
+
+body.dark-mode .dessert{
+    background:#555555;
+}
+
+body.dark-mode .orange{
+    background:#7B1E3C;
+}
+
+body.dark-mode .category-icon{
+    color:#ffffff;
+}
+
+/*==============================
+        CARD CONTENT
+==============================*/
+
+body.dark-mode .category-card h3{
+    color:#ffffff;
+}
+
+body.dark-mode .category-card p{
+    color:#bdbdbd;
+}
+
+/*==============================
+        LINKS
+==============================*/
+
+body.dark-mode .category-card a{
+    color:goldenrod;
+}
+
+body.dark-mode .category-card a:hover{
+    color:#ffffff;
+}
+
+body.dark-mode .category-card a i{
+    color:inherit;
+}
+
+/*==============================
+        TEXT SELECTION
+==============================*/
+
+body.dark-mode ::selection{
+    background:goldenrod;
+    color:#111111;
+}

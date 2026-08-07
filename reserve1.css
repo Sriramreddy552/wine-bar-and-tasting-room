@@ -330,3 +330,120 @@ button{
 }
 
 }
+/*====================================
+            DARK MODE
+====================================*/
+
+body.dark-mode{
+    background:#111111;
+    color:#f5f5f5;
+}
+
+/* Section */
+
+body.dark-mode .reserve-section{
+    background:#181818;
+}
+
+/* Heading */
+
+body.dark-mode .reserve-content h2{
+    color:#ffffff;
+}
+
+/* Subtitle */
+
+body.dark-mode .sub-title{
+    color:var(--secondary);
+}
+
+/* Paragraph */
+
+body.dark-mode .reserve-content p{
+    color:#c7c7c7;
+}
+
+/* Image */
+
+body.dark-mode .reserve-image img{
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+}
+
+/* Wine Badge */
+
+body.dark-mode .wine-badge{
+    background:rgba(35,35,35,.96);
+    color:var(--secondary);
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+body.dark-mode .wine-badge i{
+    color:var(--secondary);
+}
+
+/*==============================
+        FORM
+==============================*/
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea{
+    background:#222222;
+    color:#ffffff;
+    border:1px solid #3a3a3a;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder{
+    color:#9c9c9c;
+}
+
+/* Select */
+
+body.dark-mode select{
+    color:#ffffff;
+}
+
+body.dark-mode select option{
+    background:#222222;
+    color:#ffffff;
+}
+
+/* Focus */
+
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus{
+    border-color:var(--secondary);
+    box-shadow:0 0 18px rgba(200,155,94,.35);
+}
+
+/*==============================
+        BUTTON
+==============================*/
+
+body.dark-mode button{
+    background:var(--primary);
+    color:#ffffff;
+}
+
+body.dark-mode button:hover{
+    background:var(--secondary);
+    color:#111111;
+}
+
+/* Autofill */
+
+body.dark-mode input:-webkit-autofill,
+body.dark-mode textarea:-webkit-autofill,
+body.dark-mode select:-webkit-autofill{
+    -webkit-box-shadow:0 0 0 1000px #222222 inset;
+    -webkit-text-fill-color:#ffffff;
+}
+
+/* Text Selection */
+
+body.dark-mode ::selection{
+    background:var(--secondary);
+    color:#111111;
+}

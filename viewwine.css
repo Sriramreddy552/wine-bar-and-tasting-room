@@ -223,3 +223,104 @@ Responsive
     }
 
 }
+/*====================================
+            DARK MODE
+====================================*/
+
+body.dark-mode .view-wines{
+    background:#111111;
+}
+
+/*==============================
+        SECTION TITLE
+==============================*/
+
+body.dark-mode .section-title span{
+    color:goldenrod;
+}
+
+body.dark-mode .section-title h2{
+    color:#ffffff;
+}
+
+body.dark-mode .section-title p{
+    color:#c5c5c5;
+}
+
+/*==============================
+        WINE CARD
+==============================*/
+
+body.dark-mode .wine-card{
+    background:#1b1b1b;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+body.dark-mode .wine-card:hover{
+    box-shadow:0 25px 50px rgba(0,0,0,.55);
+}
+
+/*==============================
+        IMAGE
+==============================*/
+
+body.dark-mode .wine-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.35),
+        transparent 65%
+    );
+    pointer-events:none;
+}
+
+body.dark-mode .wine-tag{
+    background:goldenrod;
+    color:#111111;
+}
+
+/*==============================
+        CONTENT
+==============================*/
+
+body.dark-mode .wine-content h3{
+    color:#ffffff;
+}
+
+body.dark-mode .wine-content p{
+    color:#bdbdbd;
+}
+
+/*==============================
+        WINE INFO
+==============================*/
+
+body.dark-mode .wine-info span{
+    color:#d2d2d2;
+}
+
+/*==============================
+        BUTTON
+==============================*/
+
+body.dark-mode .wine-content a{
+    background:#7B1E3A;
+    color:#ffffff;
+}
+
+body.dark-mode .wine-content a:hover{
+    background:goldenrod;
+    color:#111111;
+}
+
+/*==============================
+        TEXT SELECTION
+==============================*/
+
+body.dark-mode ::selection{
+    background:goldenrod;
+    color:#111111;
+}

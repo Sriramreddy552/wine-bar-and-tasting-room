@@ -418,7 +418,7 @@ TEXT
 
     font-family:'cormorant garamond',inter;;
 
-    font-size:28px;
+    font-size:30px;
 
     color:var(--dark);
 
@@ -547,7 +547,7 @@ NOTE
 
     font-family:'cormorant garamond',inter;;
 
-    font-size:24px;
+    font-size:30px;
 
     color:var(--dark);
 
@@ -841,7 +841,7 @@ TEXT
 
     font-family:'cormorant garamond',inter;;
 
-    font-size:26px;
+    font-size:30px;
 
     color:var(--dark);
 
@@ -1199,7 +1199,7 @@ VINORA NEWSLETTER
 
     font-family:'cormorant garamond',inter;;
 
-    font-size:40px;
+    font-size:30px;
 
     color:var(--dark);
 
@@ -1260,7 +1260,7 @@ VINORA NEWSLETTER
 
     font-family:'cormorant garamond',inter;;
 
-    font-size:40px;
+    font-size:30px;
 
     color:var(--dark);
 
@@ -1976,7 +1976,7 @@ Samsung Galaxy S8+ (360px × 740px)
 }
 
 .contact-text h3{
-    font-size:22px;
+    font-size:30px;
 }
 
 /* Business Hours */
@@ -2160,7 +2160,7 @@ iPad Pro
 }
 
 .contact-text h3{
-    font-size:24px;
+    font-size:30px;
 }
 
 /* Business Hours */

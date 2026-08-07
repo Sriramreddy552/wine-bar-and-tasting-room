@@ -234,4 +234,129 @@
     }
 
 }
+/*====================================
+            RTL MODE
+====================================*/
+
+html[dir="rtl"] .section-title{
+    text-align:center;
+}
+
+html[dir="rtl"] .wine-info{
+    text-align:right;
+}
+
+html[dir="rtl"] .wine-tag{
+    left:auto;
+    right:18px;
+}
+
+html[dir="rtl"] .wine-meta{
+    flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .wine-footer{
+    flex-direction:row-reverse;
+}
+
+html[dir="rtl"] .wine-meta span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+html[dir="rtl"] .wine-info h3,
+html[dir="rtl"] .wine-info h5,
+html[dir="rtl"] .wine-info p{
+    text-align:right;
+}
+
+html[dir="rtl"] .wine-info p{
+    line-height:30px;
+}
+
+html[dir="rtl"] .wine-card{
+    direction:rtl;
+}
+/*====================================
+            DARK MODE
+====================================*/
+
+body.dark-mode .explore-wines{
+    background:#111111;
+}
+
+body.dark-mode .section-title h2{
+    color:#ffffff;
+}
+
+body.dark-mode .section-title p{
+    color:#bfbfbf;
+}
+
+body.dark-mode .section-title span{
+    color:goldenrod;
+}
+
+body.dark-mode .wine-card{
+    background:#1b1b1b;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+body.dark-mode .wine-card:hover{
+    border-color:goldenrod;
+    box-shadow:0 18px 45px rgba(0,0,0,.5);
+}
+
+body.dark-mode .wine-info h3{
+    color:#ffffff;
+}
+
+body.dark-mode .wine-card:hover .wine-info h3{
+    color:goldenrod;
+}
+
+body.dark-mode .wine-info h5{
+    color:#d0d0d0;
+}
+
+body.dark-mode .wine-info p{
+    color:#b8b8b8;
+}
+
+body.dark-mode .wine-meta{
+    color:#d6d6d6;
+}
+
+body.dark-mode .wine-meta i{
+    color:goldenrod;
+}
+
+body.dark-mode .wine-footer h4{
+    color:goldenrod;
+}
+
+body.dark-mode .wine-footer a{
+    background:#7B1E3A;
+    color:#ffffff;
+}
+
+body.dark-mode .wine-footer a:hover{
+    background:goldenrod;
+    color:#111111;
+}
+
+body.dark-mode .wine-image::before{
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.65),
+        transparent 65%
+    );
+}
+
+body.dark-mode .wine-tag{
+    background:goldenrod;
+    color:#111111;
+}
 

@@ -254,4 +254,136 @@
     }
 
 }
+/*====================================
+            DARK MODE
+====================================*/
 
+body.dark-mode .reserve-table{
+    background:#111111;
+}
+
+/*==============================
+        LEFT CONTENT
+==============================*/
+
+body.dark-mode .reserve-content span{
+    color:goldenrod;
+}
+
+body.dark-mode .reserve-content h2{
+    color:#ffffff;
+}
+
+body.dark-mode .reserve-content p{
+    color:#c8c8c8;
+}
+
+/*==============================
+        FEATURES
+==============================*/
+
+body.dark-mode .feature-icon{
+    background:#7B1E3A;
+    color:#ffffff;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+body.dark-mode .feature:hover .feature-icon{
+    background:goldenrod;
+    color:#111111;
+}
+
+body.dark-mode .feature h4{
+    color:#ffffff;
+}
+
+body.dark-mode .feature p{
+    color:#bdbdbd;
+}
+
+/*==============================
+        BOOKING FORM
+==============================*/
+
+body.dark-mode .booking-form{
+    background:#1b1b1b;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+}
+
+body.dark-mode .booking-form h3{
+    color:#ffffff;
+}
+
+/*==============================
+        INPUTS
+==============================*/
+
+body.dark-mode .booking-form input,
+body.dark-mode .booking-form select,
+body.dark-mode .booking-form textarea{
+    background:#262626;
+    color:#ffffff;
+    border:1px solid #3f3f3f;
+}
+
+body.dark-mode .booking-form input::placeholder,
+body.dark-mode .booking-form textarea::placeholder{
+    color:#9e9e9e;
+}
+
+/* Select Options */
+
+body.dark-mode .booking-form select{
+    color:#ffffff;
+}
+
+body.dark-mode .booking-form select option{
+    background:#262626;
+    color:#ffffff;
+}
+
+/*==============================
+        INPUT FOCUS
+==============================*/
+
+body.dark-mode .booking-form input:focus,
+body.dark-mode .booking-form select:focus,
+body.dark-mode .booking-form textarea:focus{
+    border-color:goldenrod;
+    box-shadow:0 0 15px rgba(218,165,32,.25);
+}
+
+/*==============================
+        BUTTON
+==============================*/
+
+body.dark-mode .booking-form button{
+    background:#7B1E3A;
+    color:#ffffff;
+}
+
+body.dark-mode .booking-form button:hover{
+    background:goldenrod;
+    color:#111111;
+}
+
+/*==============================
+        AUTOFILL
+==============================*/
+
+body.dark-mode input:-webkit-autofill,
+body.dark-mode textarea:-webkit-autofill,
+body.dark-mode select:-webkit-autofill{
+    -webkit-box-shadow:0 0 0 1000px #262626 inset;
+    -webkit-text-fill-color:#ffffff;
+}
+
+/*==============================
+        TEXT SELECTION
+==============================*/
+
+body.dark-mode ::selection{
+    background:goldenrod;
+    color:#111111;
+}
