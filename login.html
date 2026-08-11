@@ -1,218 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Vinora | Member Login</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-<link rel="stylesheet" href="login.css">
-
+ 
+    <meta charset="UTF-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Vinora | Member Login</title>
+ 
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap%22
+        rel="stylesheet">
+ 
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ 
+    <!-- LOGIN CSS -->
+    <link rel="stylesheet" href="login.css">
+ 
 </head>
-
+ 
+ 
 <body>
-
-<section class="login-page">
-
-<div class="login-container">
-
-<!--=========================
-LEFT IMAGE
-==========================-->
-
-<div class="login-image">
-
-<img src="images/login1.jpg" alt="Vinora">
-
-<div class="image-overlay">
-
-<span>WELCOME BACK</span>
-
-<h2>
-Discover Your
-<br>
-Wine Journey
-</h2>
-
-<p>
-
-Login to reserve exclusive tastings,
-private cellar experiences,
-and premium wine collections.
-
-</p>
-
-<div class="overlay-stats">
-
-<div class="stat">
-
-<h3>12K+</h3>
-
-<p>Members</p>
-
-</div>
-
-<div class="stat">
-
-<h3>300+</h3>
-
-<p>Wine Labels</p>
-
-</div>
-
-<div class="stat">
-
-<h3>50+</h3>
-
-<p>Events</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!--=========================
-RIGHT
-==========================-->
-
-<div class="login-box">
-
-<div class="box-controls">
-
-<button id="rtlBtn">
-<i class="fa-solid fa-language"></i>
-</button>
-
-<button id="darkBtn">
-<i class="fa-solid fa-moon"></i>
-</button>
-
-</div>
-
-<h2>Member Login</h2>
-
-<p>
-
-Welcome back to Vinora.
-Please login to continue.
-
-</p>
-
-<form>
-
-<div class="input-box">
-
-<i class="fa-solid fa-envelope"></i>
-
-<input
-type="email"
-placeholder="Email Address"
-required>
-
-</div>
-
-<div class="input-box">
-
-<i class="fa-solid fa-lock"></i>
-
-<input
-type="password"
-placeholder="Password"
-required>
-
-</div>
-
-<div class="login-options">
-
-<label>
-
-<input type="checkbox">
-
-Remember Me
-
-</label>
-
-<a href="#">Forgot Password?</a>
-
-</div>
-
-<button class="login-btn">
-
-Login
-
-</button>
-
-</form>
-
-<div class="divider">
-
-<span>OR</span>
-
-</div>
-
-<a href="#" class="social-btn">
-
-<i class="fa-brands fa-google"></i>
-
-Continue with Google
-
-</a>
-
-<a href="#" class="social-btn">
-
-<i class="fa-brands fa-apple"></i>
-
-Continue with Apple
-
-</a>
-
-<div class="signup-link">
-
-Don't have an account?
-
-<a href="signup.html">
-
-Create Account
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<script>
-
-document.getElementById("rtlBtn").onclick=function(){
-
-document.body.classList.toggle("rtl");
-
-};
-
-document.getElementById("darkBtn").onclick=function(){
-
-document.body.classList.toggle("dark");
-
-};
-
-</script>
-
+ 
+ 
+    <!--==================================================
+                        LOGIN PAGE
+    ==================================================-->
+ 
+    <section class="login-page">
+ 
+ 
+        <div class="login-container">
+ 
+ 
+            <!--==================================================
+                            LEFT IMAGE
+            ==================================================-->
+ 
+            <div class="login-image">
+ 
+                <img src="images/login1.jpg" alt="Vinora">
+ 
+                <div class="image-overlay">
+ 
+                    <span>WELCOME BACK</span>
+ 
+                    <h2>
+                        Discover Your
+                        <br>
+                        Wine Journey
+                    </h2>
+ 
+                    <p>
+                        Login to reserve exclusive tastings,
+                        private cellar experiences,
+                        and premium wine collections.
+                    </p>
+ 
+ 
+                    <!-- STATS -->
+ 
+                    <div class="overlay-stats">
+ 
+ 
+                        <div class="stat">
+ 
+                            <h3>12K+</h3>
+ 
+                            <p>Members</p>
+ 
+                        </div>
+ 
+ 
+                        <div class="stat">
+ 
+                            <h3>300+</h3>
+ 
+                            <p>Wine Labels</p>
+ 
+                        </div>
+ 
+ 
+                        <div class="stat">
+ 
+                            <h3>50+</h3>
+ 
+                            <p>Events</p>
+ 
+                        </div>
+ 
+ 
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+ 
+ 
+            <!--==================================================
+                            RIGHT LOGIN SIDE
+            ==================================================-->
+ 
+            <div class="login-box">
+ 
+ 
+                <!--==================================================
+                            RTL & DARK CONTROLS
+                ==================================================-->
+ 
+                <div class="box-controls">
+ 
+                    <button
+                        id="rtlBtn"
+                        type="button"
+                        aria-label="Toggle RTL">
+ 
+                        <i class="fa-solid fa-language"></i>
+ 
+                    </button>
+ 
+ 
+                    <button
+                        id="darkBtn"
+                        type="button"
+                        aria-label="Toggle Dark Mode">
+ 
+                        <i class="fa-solid fa-moon"></i>
+ 
+                    </button>
+ 
+                </div>
+ 
+ 
+ 
+                <!--==================================================
+                                VINORA LOGO
+                ==================================================-->
+ 
+                <div class="login-logo">
+ 
+                    <a href="index.html">
+ 
+                        <img
+                            src="images/logo.png"
+                            alt="Vinora Logo">
+ 
+                    </a>
+ 
+                </div>
+ 
+ 
+ 
+                <!--==================================================
+                                HEADING
+                ==================================================-->
+ 
+                <h2>
+                    Member Login
+                </h2>
+ 
+ 
+                <p>
+                    Welcome back to Vinora.
+                    Please login to continue.
+                </p>
+ 
+ 
+ 
+                <!--==================================================
+                                LOGIN FORM
+                ==================================================-->
+ 
+                <form>
+ 
+ 
+                    <!-- EMAIL -->
+ 
+                    <div class="input-box">
+ 
+                        <i class="fa-solid fa-envelope"></i>
+ 
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                            required>
+ 
+                    </div>
+ 
+ 
+ 
+                    <!-- PASSWORD -->
+ 
+                    <div class="input-box">
+ 
+                        <i class="fa-solid fa-lock"></i>
+ 
+                        <input
+                            type="password"
+                            placeholder="Password"
+                            required>
+ 
+                    </div>
+ 
+ 
+ 
+                    <!-- OPTIONS -->
+ 
+                    <div class="login-options">
+ 
+ 
+                        <label>
+ 
+                            <input type="checkbox">
+ 
+                            <span>
+                                Remember Me
+                            </span>
+ 
+                        </label>
+ 
+ 
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+ 
+ 
+                    </div>
+ 
+ 
+ 
+                    <!-- LOGIN BUTTON -->
+ 
+                    <button
+                        class="login-btn"
+                        type="submit">
+ 
+                        Login
+ 
+                    </button>
+ 
+ 
+                </form>
+ 
+ 
+ 
+                <!--==================================================
+                                DIVIDER
+                ==================================================-->
+ 
+                <div class="divider">
+ 
+                    <span>
+                        OR
+                    </span>
+ 
+                </div>
+ 
+ 
+ 
+                <!--==================================================
+                                GOOGLE LOGIN
+                ==================================================-->
+ 
+                <a
+                    href="#"
+                    class="social-btn">
+ 
+                    <i class="fa-brands fa-google"></i>
+ 
+                    <span>
+                        Continue with Google
+                    </span>
+ 
+                </a>
+ 
+ 
+ 
+                <!--==================================================
+                                APPLE LOGIN
+                ==================================================-->
+ 
+                <a
+                    href="#"
+                    class="social-btn">
+ 
+                    <i class="fa-brands fa-apple"></i>
+ 
+                    <span>
+                        Continue with Apple
+                    </span>
+ 
+                </a>
+ 
+ 
+ 
+                <!--==================================================
+                                SIGNUP LINK
+                ==================================================-->
+ 
+                <div class="signup-link">
+ 
+                    <span>
+                        Don't have an account?
+                    </span>
+ 
+                    <a href="signup.html">
+                        Create Account
+                    </a>
+ 
+                </div>
+ 
+ 
+            </div>
+ 
+ 
+        </div>
+ 
+ 
+    </section>
+ 
+ 
+ 
+    <!--==================================================
+                            JAVASCRIPT
+    ==================================================-->
+ 
+    <script>
+ 
+        /*========================================
+                    RTL TOGGLE
+        ========================================*/
+ 
+        document.getElementById("rtlBtn").onclick = function () {
+ 
+            document.body.classList.toggle("rtl");
+ 
+        };
+ 
+ 
+ 
+        /*========================================
+                    DARK MODE TOGGLE
+        ========================================*/
+ 
+        document.getElementById("darkBtn").onclick = function () {
+ 
+            document.body.classList.toggle("dark");
+ 
+            const icon = this.querySelector("i");
+ 
+            if (document.body.classList.contains("dark")) {
+ 
+                icon.classList.remove("fa-moon");
+ 
+                icon.classList.add("fa-sun");
+ 
+            } else {
+ 
+                icon.classList.remove("fa-sun");
+ 
+                icon.classList.add("fa-moon");
+ 
+            }
+ 
+        };
+ 
+    </script>
+ 
+ 
 </body>
+ 
 </html>

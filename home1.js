@@ -1,33 +1,62 @@
 
-const counters = document.querySelectorAll(".counter");
 
-const speed = 80;
+document.addEventListener("DOMContentLoaded", () => {
 
-counters.forEach(counter => {
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-    const updateCount = () => {
+    anchorLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            const targetId = link.getAttribute("href");
+            if (targetId === "#") return;
 
-        const target = +counter.getAttribute("data-target");
-        const suffix = counter.getAttribute("data-suffix") || "";
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const headerOffset = 92;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-        const count = +counter.innerText.replace("K", "");
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
 
-        const increment = Math.ceil(target / speed);
+    const animateElements = document.querySelectorAll(
+        ".cellar-pillar-item, .pairing-h2-card, .reason-item, .sommelier-editorial-card, .ritual-step-item, .press-card"
+    );
 
-        if (count < target) {
+    if ("IntersectionObserver" in window) {
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -40px 0px"
+        };
 
-            counter.innerText = count + increment;
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-            setTimeout(updateCount, 25);
+        animateElements.forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(20px)";
+            el.style.transition = "opacity 0.5s ease-out, transform 0.5s ease-out";
+            observer.observe(el);
+        });
+    }
 
-        } else {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
 
-            counter.innerText = target + suffix;
-
-        }
-
-    };
-
-    updateCount();
-
+    if (localStorage.getItem("direction") === "rtl") {
+        document.documentElement.setAttribute("dir", "rtl");
+    }
 });

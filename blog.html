@@ -1,685 +1,655 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>VINORA - Featured Blog</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <link rel="stylesheet" href="blog.css">
-    <link rel="stylesheet" href="global.css">
-
-</head>
-<body>
- <div id="navbar"></div>
- <section class="blog-hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <span class="hero-tag">
-                <i class="fa-solid fa-book-open"></i>
-                Vinora Wine Journal
-            </span>
-
-            <h1>
-                Explore The World Of
-                <span>Fine Wines & Stories</span>
-            </h1>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover wine culture, tasting experiences, food pairings, cellar stories, and memorable evenings at Vinora Wine Bar."
+    />
+    <title>Stories Behind Every Pour | Vinora Wine Bar</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap%22
+      rel="stylesheet"
+      <!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="global.css">
+    
+ 
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+ 
+        <div class="container hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="#">Home</a>
+            <span>/</span>
+            <span>Journal</span>
+          </nav>
+ 
+          <p class="eyebrow eyebrow-light">The Vinora Journal</p>
+ 
+          <h1 id="hero-title">Stories Behind<br />Every Pour</h1>
+ 
+          <p class="hero-description">
+            Discover wine culture, tasting experiences, food pairings, cellar
+            stories, and memorable evenings at Vinora Wine Bar.
+          </p>
+        </div>
+      </section>
+ 
+      <section
+        class="section featured-section"
+        aria-labelledby="featured-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Editor's selection</p>
+              <h2 id="featured-title">Featured Story</h2>
+            </div>
+            <span class="heading-line"></span>
+          </div>
+ 
+          <article class="featured-card" data-category="Wine Culture">
+            <a
+              class="featured-image-wrap"
+              href="#"
+              aria-label="Read The Art of the Perfect Wine Tasting"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1400&q=85"
+                alt="Red wine being poured into a glass"
+              />
+              <span class="image-overlay"></span>
+            </a>
+ 
+            <div class="featured-content">
+              <div class="article-meta">
+                <span class="category-badge">Wine Culture</span>
+                <time datetime="2026-08-05">05 Aug 2026</time>
+                <span class="meta-separator"></span>
+                <span>8 min read</span>
+              </div>
+ 
+              <h3>
+                <a href="#">The Art of the Perfect Wine Tasting</a>
+              </h3>
+ 
+              <p>
+                From the first swirl to the final sip, discover the rituals and
+                sensory details that transform a simple tasting into an
+                unforgettable journey through the world of wine.
+              </p>
+ 
+              <div class="author">
+                <span class="author-avatar">AS</span>
+                <span>
+                  <small>Words by</small>
+                  <strong>Amelia Stone</strong>
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+ 
+      <section class="section latest-section" aria-labelledby="latest-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">From our journal</p>
+              <h2 id="latest-title">Latest Articles</h2>
+            </div>
+            <span class="heading-line"></span>
+          </div>
+ 
+          <div
+            class="category-toolbar"
+            aria-label="Filter articles by category"
+          >
+            <button
+              class="category-filter active"
+              type="button"
+              data-filter="all"
+            >
+              All Stories
+            </button>
+            <button
+              class="category-filter"
+              type="button"
+              data-filter="Wine Guides"
+            >
+              Wine Guides
+            </button>
+            <button
+              class="category-filter"
+              type="button"
+              data-filter="Food Pairing"
+            >
+              Food Pairing
+            </button>
+            <button
+              class="category-filter"
+              type="button"
+              data-filter="Wine Stories"
+            >
+              Wine Stories
+            </button>
+            <button
+              class="category-filter"
+              type="button"
+              data-filter="Cocktails"
+            >
+              Cocktails
+            </button>
+            <button class="category-filter" type="button" data-filter="Events">
+              Events
+            </button>
+            <button
+              class="category-filter"
+              type="button"
+              data-filter="Behind the Cellar"
+            >
+              Behind the Cellar
+            </button>
+          </div>
+ 
+          <div class="blog-grid" id="blogGrid">
+            <article class="blog-card" data-category="Wine Guides">
+              <a
+                class="card-image-wrap"
+                href="#"
+                aria-label="Read A Beginner's Guide to Burgundy"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&w=900&q=85"
+                  alt="Wine bottles in a vineyard cellar"
+                />
+              </a>
+ 
+              <div class="card-content">
+                <div class="article-meta">
+                  <span class="card-category">Wine Guides</span>
+                  <time datetime="2026-08-02">02 Aug 2026</time>
+                  <span class="meta-separator"></span>
+                  <span>6 min read</span>
+                </div>
+ 
+                <h3><a href="#">A Beginner's Guide to Burgundy</a></h3>
+ 
+                <p>
+                  Explore the elegant reds, expressive whites, and timeless
+                  traditions that make Burgundy so captivating.
+                </p>
+ 
+                <a class="read-more" href="blogdetailing.html">
+                  Read More <span aria-hidden="true">↗</span>
+                </a>
+ 
+                <div class="author">
+                  <span class="author-avatar">JM</span>
+                  <span>
+                    <small>Words by</small>
+                    <strong>Julian Moore</strong>
+                  </span>
+                </div>
+              </div>
+            </article>
+ 
+            <article class="blog-card" data-category="Food Pairing">
+              <a
+                class="card-image-wrap"
+                href="#"
+                aria-label="Read Pairing Summer Wines with Seasonal Plates"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=900&q=85"
+                  alt="Elegant food pairing served with wine"
+                />
+              </a>
+ 
+              <div class="card-content">
+                <div class="article-meta">
+                  <span class="card-category">Food Pairing</span>
+                  <time datetime="2026-07-28">28 Jul 2026</time>
+                  <span class="meta-separator"></span>
+                  <span>5 min read</span>
+                </div>
+ 
+                <h3>
+                  <a href="#">Pairing Summer Wines with Seasonal Plates</a>
+                </h3>
+ 
+                <p>
+                  Bright whites, delicate rosés, and the fresh flavors that
+                  bring a warm summer evening to life.
+                </p>
+ 
+                <a class="read-more" href="blogdetailing.html">
+                  Read More <span aria-hidden="true">↗</span>
+                </a>
+ 
+                <div class="author">
+                  <span class="author-avatar">SC</span>
+                  <span>
+                    <small>Words by</small>
+                    <strong>Sofia Clarke</strong>
+                  </span>
+                </div>
+              </div>
+            </article>
+ 
+            <article class="blog-card" data-category="Wine Stories">
+              <a
+                class="card-image-wrap"
+                href="#"
+                aria-label="Read The Quiet Craft of Natural Wine"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=900&q=85"
+                  alt="Wine glasses on a dark wooden table"
+                />
+              </a>
+ 
+              <div class="card-content">
+                <div class="article-meta">
+                  <span class="card-category">Wine Stories</span>
+                  <time datetime="2026-07-24">24 Jul 2026</time>
+                  <span class="meta-separator"></span>
+                  <span>7 min read</span>
+                </div>
+ 
+                <h3><a href="#">The Quiet Craft of Natural Wine</a></h3>
+ 
+                <p>
+                  Meet the winemakers embracing patience, place, and a lighter
+                  touch in every bottle they create.
+                </p>
+ 
+                <a class="read-more" href="blogdetailing.html">
+                  Read More <span aria-hidden="true">↗</span>
+                </a>
+ 
+                <div class="author">
+                  <span class="author-avatar">ER</span>
+                  <span>
+                    <small>Words by</small>
+                    <strong>Elena Rossi</strong>
+                  </span>
+                </div>
+              </div>
+            </article>
+ 
+            <article class="blog-card" data-category="Cocktails">
+              <a
+                class="card-image-wrap"
+                href="#"
+                aria-label="Read Cocktails with a Sense of Place"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85"
+                  alt="Craft cocktail with citrus garnish"
+                />
+              </a>
+ 
+              <div class="card-content">
+                <div class="article-meta">
+                  <span class="card-category">Cocktails</span>
+                  <time datetime="2026-07-19">19 Jul 2026</time>
+                  <span class="meta-separator"></span>
+                  <span>4 min read</span>
+                </div>
+ 
+                <h3><a href="#">Cocktails with a Sense of Place</a></h3>
+ 
+                <p>
+                  Our bar team shares the local ingredients and classic
+                  techniques behind Vinora's signature serves.
+                </p>
+ 
+                <a class="read-more" href="blogdetailing.html">
+                  Read More <span aria-hidden="true">↗</span>
+                </a>
+ 
+                <div class="author">
+                  <span class="author-avatar">NO</span>
+                  <span>
+                    <small>Words by</small>
+                    <strong>Noah Oliver</strong>
+                  </span>
+                </div>
+              </div>
+            </article>
+ 
+            <article class="blog-card" data-category="Events">
+              <a
+                class="card-image-wrap"
+                href="#"
+                aria-label="Read An Evening Under the Vines"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=900&q=85"
+                  alt="Vineyard landscape at sunset"
+                />
+              </a>
+ 
+              <div class="card-content">
+                <div class="article-meta">
+                  <span class="card-category">Events</span>
+                  <time datetime="2026-07-14">14 Jul 2026</time>
+                  <span class="meta-separator"></span>
+                  <span>5 min read</span>
+                </div>
+ 
+                <h3><a href="#">An Evening Under the Vines</a></h3>
+ 
+                <p>
+                  Take a glimpse behind our intimate vineyard dinner, where good
+                  food and great company took center stage.
+                </p>
+ 
+                <a class="read-more" href="blogdetailing.html">
+                  Read More <span aria-hidden="true">↗</span>
+                </a>
+ 
+                <div class="author">
+                  <span class="author-avatar">LP</span>
+                  <span>
+                    <small>Words by</small>
+                    <strong>Luca Perrin</strong>
+                  </span>
+                </div>
+              </div>
+            </article>
+ 
+            <article class="blog-card" data-category="Behind the Cellar">
+              <a
+                class="card-image-wrap"
+                href="#"
+                aria-label="Read Inside Our Cellar"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?auto=format&fit=crop&w=900&q=85"
+                  alt="Rows of wine bottles stored in a cellar"
+                />
+              </a>
+ 
+              <div class="card-content">
+                <div class="article-meta">
+                  <span class="card-category">Behind the Cellar</span>
+                  <time datetime="2026-07-09">09 Jul 2026</time>
+                  <span class="meta-separator"></span>
+                  <span>8 min read</span>
+                </div>
+ 
+                <h3><a href="#">Inside Our Cellar: A Living Archive</a></h3>
+ 
+                <p>
+                  Step below the bar and discover the bottles, stories, and
+                  careful choices that shape the Vinora list.
+                </p>
+ 
+                <a class="read-more" href="blogdetailing.html">
+                  Read More <span aria-hidden="true">↗</span>
+                </a>
+ 
+                <div class="author">
+                  <span class="author-avatar">AP</span>
+                  <span>
+                    <small>Words by</small>
+                    <strong>Aria Patel</strong>
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+ 
+          <p class="empty-state" id="emptyState" hidden>
+            No stories found in this category.
+          </p>
+        </div>
+      </section>
+ 
+      <section class="quote-section" aria-label="Vinora quote">
+        <div class="quote-overlay"></div>
+ 
+        <div class="container quote-content">
+          <span class="quote-mark">“</span>
+          <blockquote>
+            Wine is bottled poetry,<br />
+            and every bottle tells a story.
+          </blockquote>
+          <span class="quote-rule"></span>
+          <cite>— Robert Louis Stevenson</cite>
+        </div>
+      </section>
+ 
+      <section class="newsletter-section" aria-labelledby="newsletter-title">
+        <div class="container newsletter-inner">
+          <div class="newsletter-copy">
+            <p class="eyebrow">A note from Vinora</p>
+            <h2 id="newsletter-title">Stay Updated</h2>
             <p>
-                Discover expert wine guides, vineyard stories, tasting notes,
-                food pairings, and exclusive interviews with renowned
-                sommeliers from around the world.
+              Receive exclusive wine stories, seasonal recommendations, and
+              event updates.
             </p>
-
-            <div class="hero-buttons">
-
-                <a href="blogdetailing.html">Read Articles</a>
-
-                <a href="viewwine.html">Wine Guides</a>
-
-            </div>
-
+          </div>
+ 
+          <form class="newsletter-form" action="#" method="post">
+            <label class="sr-only" for="email">Your email address</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
-
-    </div>
-
-</section>
-<section class="featured-blog">
-
-    <div class="blog-image">
-
-        <img src="images/blog hero.jpg" alt="Wine Blog">
-
-        <div class="blog-tag">
-            FEATURED ARTICLE
-        </div>
-
-    </div>
-
-    <div class="blog-content">
-
-        <span class="category">Wine Education</span>
-
-        <h1>
-            Discover The Art Of Wine Tasting Like A Professional Sommelier
-        </h1>
-
-        <p>
-            Explore the world of premium wines through expert tasting techniques,
-            aroma recognition, and perfect food pairings. Whether you're a beginner
-            or a wine enthusiast, this guide helps you enjoy every sip with confidence.
-        </p>
-
-        <div class="blog-info">
-
-            <div>
-                <i class="fa-solid fa-calendar-days"></i>
-                July 30, 2026
-            </div>
-
-            <div>
-                <i class="fa-solid fa-clock"></i>
-                6 Min Read
-            </div>
-
-            <div>
-                <i class="fa-solid fa-user"></i>
-                Vinora Team
-            </div>
-
-        </div>
-
-        <a href="#" class="blog-btn">
-            Read More
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-    </div>
-
-</section>
-<section class="latest-articles">
-
-    <div class="section-title">
-
-        <span>Latest Stories</span>
-
-        <h2>Fresh From The Vinora Journal</h2>
-
-        <p>
-            Discover our newest wine stories, pairing guides, tasting experiences,
-            and vineyard insights carefully selected for every wine lover.
-        </p>
-
-    </div>
-
-    <div class="articles">
-
-        <!-- Article -->
-
-        <article class="article-card">
-
-            <div class="article-img">
-
-                <img src="images/tips.jpg" alt="">
-
-            </div>
-
-            <div class="article-content">
-
-                <span class="article-category">
-                    Wine Tips
-                </span>
-
-                <h3>
-                    7 Wine Tasting Tips for Every Beginner 
-                </h3>
-
-                <div class="article-meta">
-
-                    <span>
-                        <i class="fa-regular fa-calendar"></i>
-                        July 30, 2026
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        5 Min
-                    </span>
-
-                </div>
-
-                <a href="blogdetailing.html">
-                    Read Article
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </article>
-
-        <!-- Article -->
-
-        <article class="article-card">
-
-            <div class="article-img">
-
-                <img src="images/pair.jpg" alt="">
-
-            </div>
-
-            <div class="article-content">
-
-                <span class="article-category">
-                    Pairing Guide
-                </span>
-
-                <h3>
-                    Perfect Wine Pairings For Italian Cuisine
-                </h3>
-
-                <div class="article-meta">
-
-                    <span>
-                        <i class="fa-regular fa-calendar"></i>
-                        July 28, 2026
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        7 Min
-                    </span>
-
-                </div>
-
-                <a href="blogdetailing.html">
-                    Read Article
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </article>
-
-        <!-- Article -->
-
-        <article class="article-card">
-
-            <div class="article-img">
-
-                <img src="images/yard.jpg" alt="">
-
-            </div>
-
-            <div class="article-content">
-
-                <span class="article-category">
-                    Vineyard
-                </span>
-
-                <h3>
-                    Behind Scenes Of Vineyard Harvest
-                </h3>
-
-                <div class="article-meta">
-
-                    <span>
-                        <i class="fa-regular fa-calendar"></i>
-                        July 25, 2026
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        6 Min
-                    </span>
-
-                </div>
-
-                <a href="blogdetailing.html">
-                    Read Article
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-<section class="wine-education">
-
-    <div class="section-heading">
-
-        <span>Learn Wine</span>
-
-        <h2>Wine Education Journey</h2>
-
-        <p>
-            Expand your wine knowledge through our expertly curated learning path,
-            from understanding grape varieties to mastering wine tasting techniques.
-        </p>
-
-    </div>
-
-    <div class="timeline">
-
-        <!-- Item 1 -->
-
-        <div class="timeline-item left">
-
-            <div class="content">
-
-                <span>01</span>
-
-                <h3>Understanding Wine Varieties</h3>
-
-                <p>
-                    Discover the unique characteristics of red, white, rosé,
-                    sparkling, and dessert wines and what makes each style special.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Item 2 -->
-
-        <div class="timeline-item right">
-
-            <div class="content">
-
-                <span>02</span>
-
-                <h3>How Wine Is Crafted</h3>
-
-                <p>
-                    Explore the complete journey from vineyard harvesting and
-                    fermentation to oak barrel aging and bottling.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Item 3 -->
-
-        <div class="timeline-item left">
-
-            <div class="content">
-
-                <span>03</span>
-
-                <h3>Wine Tasting Basics</h3>
-
-                <p>
-                    Learn how to swirl, smell, sip, and evaluate wine like a
-                    professional sommelier with confidence.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Item 4 -->
-
-        <div class="timeline-item right">
-
-            <div class="content">
-
-                <span>04</span>
-
-                <h3>Food Pairing Secrets</h3>
-
-                <p>
-                    Find the perfect combinations between wines, cheeses,
-                    seafood, meats, desserts, and international cuisines.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Item 5 -->
-
-        <div class="timeline-item left">
-
-            <div class="content">
-
-                <span>05</span>
-
-                <h3>Serving & Storage</h3>
-
-                <p>
-                    Learn ideal serving temperatures, glass selection,
-                    and storage methods to preserve every bottle perfectly.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="regions">
-
-    <div class="section-header">
-
-        <span>Explore The World</span>
-
-        <h2>Famous Wine Regions</h2>
-
-        <p>
-            Travel across the world's most celebrated vineyards and discover
-            the unique wines, climates, and traditions that define each region.
-        </p>
-
-    </div>
-
-    <div class="regions-wrapper">
-
-        <!-- Left Image -->
-
-        <div class="map-side">
-
-            <img src="images/regions1.jpg" alt="Wine Regions">
-
-        </div>
-
-        <!-- Right List -->
-
-        <div class="region-list">
-
-            <div class="region">
-
-                <span>01</span>
-
+      </section>
+      <!-- Add this section after the newsletter section and before the CTA section -->
+ 
+      <section class="wine-club-section" aria-labelledby="wine-club-title">
+        <div class="container wine-club-inner">
+          <div class="wine-club-image">
+            <img
+              src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=1200&q=85"
+              alt="A bottle of wine and two glasses on a wooden table"
+            />
+            <span class="wine-club-image-accent"></span>
+          </div>
+ 
+          <div class="wine-club-content">
+            <p class="eyebrow">A closer connection to wine</p>
+ 
+            <h2 id="wine-club-title">Join the Vinora Wine Club</h2>
+ 
+            <p>
+              Enjoy beautifully curated bottles, private tasting invitations,
+              and exclusive cellar stories delivered with the warmth and
+              character of Vinora.
+            </p>
+ 
+            <div class="wine-club-benefits">
+              <div class="wine-club-benefit">
+                <span class="benefit-number">01</span>
                 <div>
-
-                    <h3>France</h3>
-
-                    <p>Bordeaux • Burgundy • Champagne</p>
-
+                  <h3>Curated Bottles</h3>
+                  <p>Discover hand-selected wines from remarkable producers.</p>
                 </div>
-
-            </div>
-
-            <div class="region">
-
-                <span>02</span>
-
+              </div>
+ 
+              <div class="wine-club-benefit">
+                <span class="benefit-number">02</span>
                 <div>
-
-                    <h3>Italy</h3>
-
-                    <p>Tuscany • Piedmont • Veneto</p>
-
+                  <h3>Private Invitations</h3>
+                  <p>
+                    Be the first to hear about tastings, dinners, and special
+                    events.
+                  </p>
                 </div>
-
-            </div>
-
-            <div class="region">
-
-                <span>03</span>
-
+              </div>
+ 
+              <div class="wine-club-benefit">
+                <span class="benefit-number">03</span>
                 <div>
-
-                    <h3>Spain</h3>
-
-                    <p>Rioja • Ribera del Duero</p>
-
+                  <h3>Member Privileges</h3>
+                  <p>
+                    Receive special access to limited releases and seasonal
+                    menus.
+                  </p>
                 </div>
-
+              </div>
             </div>
-
-            <div class="region">
-
-                <span>04</span>
-
+ 
+            <a class="primary-button" href="winelist.html">Discover the Wine Club</a>
+          </div>
+        </div>
+      </section>
+ 
+      <section class="visit-section" aria-labelledby="visit-title">
+        <div class="visit-overlay"></div>
+ 
+        <div class="container visit-inner">
+          <div class="visit-content">
+            <p class="eyebrow eyebrow-light">Make an evening of it</p>
+ 
+            <h2 id="visit-title">Come Find Your<br />Favourite Pour</h2>
+ 
+            <p>
+              Settle into the glow of Vinora, where thoughtful wines, intimate
+              conversations, and unforgettable evenings meet.
+            </p>
+ 
+            <div class="visit-details">
+              <div class="visit-detail">
+                <span class="detail-icon">⌖</span>
                 <div>
-
-                    <h3>Australia</h3>
-
-                    <p>Barossa Valley • Margaret River</p>
-
+                  <strong>Find Us</strong>
+                  <span>24 Cellar Lane, Central District</span>
                 </div>
-
-            </div>
-
-            <div class="region">
-
-                <span>05</span>
-
+              </div>
+ 
+              <div class="visit-detail">
+                <span class="detail-icon">◷</span>
                 <div>
-
-                    <h3>California</h3>
-
-                    <p>Napa Valley • Sonoma</p>
-
+                  <strong>Opening Hours</strong>
+                  <span>Tue – Sun · 5:00 PM – 12:00 AM</span>
                 </div>
-
+              </div>
             </div>
-
-            <div class="region">
-
-                <span>06</span>
-
-                <div>
-
-                    <h3>South Africa</h3>
-
-                    <p>Stellenbosch • Paarl</p>
-
-                </div>
-
-            </div>
-
-           
-            
+ 
+            <a class="outline-button" href="contact.html">Plan Your Visit</a>
+          </div>
+ 
+          <div class="visit-card">
+            <span class="visit-card-label">Tonight at Vinora</span>
+            <span class="visit-card-line"></span>
+            <h3>Exceptional wines.<br />Warm hospitality.</h3>
+            <p>Every glass has a story worth sharing.</p>
+          </div>
         </div>
-
-    </div>
-
-</section>
-<section class="winemakers">
-
-    <div class="section-heading">
-
-        <span>Meet The Experts</span>
-
-        <h2>The Masters Behind Every Bottle</h2>
-
-        <p>
-            Every exceptional wine begins with passionate craftsmanship.
-            Meet the talented winemakers who transform carefully selected grapes
-            into unforgettable tasting experiences.
-        </p>
-
-    </div>
-
-    <div class="makers">
-
-        <!-- Winemaker -->
-
-        <div class="maker">
-
-            <img src="images/isabella.png" alt="">
-
-            <div class="maker-info">
-
-                <h3>Isabella Laurent</h3>
-
-                <h5>Chief Winemaker</h5>
-
-                <ul>
-
-                    <li>
-                        <strong>Biography</strong>
-                        Fifth-generation French winemaker passionate about elegant Bordeaux blends.
-                    </li>
-
-                    <li>
-                        <strong>Experience</strong>
-                        22 Years
-                    </li>
-
-                    <li>
-                        <strong>Philosophy</strong>
-                        Every vintage tells a unique story.
-                    </li>
-
-                    <li>
-                        <strong>Favorite Wine</strong>
-                        Cabernet Sauvignon
-                    </li>
-
-                    <li>
-                        <strong>Signature Collection</strong>
-                        Vinora Reserve Series
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-        <!-- Winemaker -->
-
-        <div class="maker">
-
-            <img src="images/mark.png" alt="">
-
-            <div class="maker-info">
-
-                <h3>Marco Bianchi</h3>
-
-                <h5>Master Cellar Expert</h5>
-
-                <ul>
-
-                    <li>
-                        <strong>Biography</strong>
-                        Italian artisan dedicated to traditional oak barrel aging.
-                    </li>
-
-                    <li>
-                        <strong>Experience</strong>
-                        18 Years
-                    </li>
-
-                    <li>
-                        <strong>Philosophy</strong>
-                        Patience creates perfection.
-                    </li>
-
-                    <li>
-                        <strong>Favorite Wine</strong>
-                        Chianti Classico
-                    </li>
-
-                    <li>
-                        <strong>Signature Collection</strong>
-                        Heritage Cellar Wines
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-        <!-- Winemaker -->
-
-        <div class="maker">
-
-            <img src="images/sofia.png" alt="">
-
-            <div class="maker-info">
-
-                <h3>Sofia Martinez</h3>
-
-                <h5>Vineyard Director</h5>
-
-                <ul>
-
-                    <li>
-                        <strong>Biography</strong>
-                        Oversees sustainable vineyards across premium wine regions.
-                    </li>
-
-                    <li>
-                        <strong>Experience</strong>
-                        15 Years
-                    </li>
-
-                    <li>
-                        <strong>Philosophy</strong>
-                        Great wine begins in the vineyard.
-                    </li>
-
-                    <li>
-                        <strong>Favorite Wine</strong>
-                        Pinot Noir
-                    </li>
-
-                    <li>
-                        <strong>Signature Collection</strong>
-                        Estate Selection
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<section class="blog-cta">
-
-    <div class="cta-box">
-
-        <span class="cta-subtitle">Join The Vinora Community</span>
-
-        <h2>Every Great Wine Has A Story. Start Yours Today.</h2>
-
-        <p>
-            From exclusive tasting events and seasonal collections to expert wine
-            guides and insider vineyard stories, become part of the Vinora family
-            and enjoy a richer wine experience.
-        </p>
-
-        <div class="cta-buttons">
-
-            <a href="explore.html" class="btn-primary">
-                Explore Our Wines
-            </a>
-
-            <a href="reserve1.html" class="btn-outline">
-                Reserve A Tasting
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-<div id="footer"></div>
+      </section>
+    </main>
+ 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const filterButtons = document.querySelectorAll(".category-filter");
+        const categoryLinks = document.querySelectorAll("[data-category-link]");
+        const blogCards = document.querySelectorAll(".blog-card");
+        const emptyState = document.querySelector("#emptyState");
+        const blogGrid = document.querySelector("#blogGrid");
+ 
+        function filterArticles(category, updateUrl = true) {
+          let visibleCards = 0;
+ 
+          blogCards.forEach((card) => {
+            const matches =
+              category === "all" || card.dataset.category === category;
+ 
+            card.classList.toggle("is-hidden", !matches);
+ 
+            if (matches) {
+              visibleCards += 1;
+            }
+          });
+ 
+          filterButtons.forEach((button) => {
+            const isActive = button.dataset.filter === category;
+            button.classList.toggle("active", isActive);
+            button.setAttribute("aria-pressed", String(isActive));
+          });
+ 
+          emptyState.hidden = visibleCards !== 0;
+ 
+          if (updateUrl) {
+            const url = new URL(window.location.href);
+ 
+            if (category === "all") {
+              url.searchParams.delete("category");
+            } else {
+              url.searchParams.set("category", category);
+            }
+ 
+            window.history.replaceState({}, "", url);
+          }
+ 
+          blogGrid.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+ 
+        filterButtons.forEach((button) => {
+          button.setAttribute(
+            "aria-pressed",
+            button.classList.contains("active") ? "true" : "false",
+          );
+ 
+          button.addEventListener("click", () => {
+            filterArticles(button.dataset.filter);
+          });
+        });
+ 
+        categoryLinks.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+ 
+            const category = link.dataset.categoryLink;
+            const matchingButton = document.querySelector(
+              `.category-filter[data-filter="${category}"]`,
+            );
+ 
+            if (matchingButton) {
+              filterArticles(category);
+            }
+          });
+        });
+ 
+        const initialCategory = new URLSearchParams(window.location.search).get(
+          "category",
+        );
+        const validCategory = [...filterButtons].some(
+          (button) => button.dataset.filter === initialCategory,
+        );
+ 
+        if (validCategory) {
+          filterArticles(initialCategory, false);
+        }
+      });
+    </script>
+    <div id="footer"></div>
  <script src="component.js"></script>
 
-</body>
+  </body>
 </html>

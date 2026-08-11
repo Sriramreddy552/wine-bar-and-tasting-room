@@ -1,88 +1,95 @@
-/*==================================
-        WINE FACTS COUNTER
-==================================*/
+document.addEventListener("DOMContentLoaded", () => {
  
-const counters = document.querySelectorAll(".fact-item h2");
+    const counters = document.querySelectorAll(".counter");
  
-const counterObserver = new IntersectionObserver((entries, observer) => {
+    const numbersSection = document.querySelector(".vinora-numbers");
  
-    entries.forEach(entry => {
+    if (!counters.length || !numbersSection) return;
  
-        if(entry.isIntersecting){
  
-            const counter = entry.target;
+    const startCounter = (counter) => {
  
-            const text = counter.innerText;
+        const target = Number(counter.dataset.target);
  
-            const target = parseInt(text.replace(/\D/g,""));
+        const suffix = counter.dataset.suffix || "";
  
-            const suffix = text.replace(/[0-9]/g,"");
+        const duration = 1800;
  
-            let count = 0;
+        const startTime = performance.now();
  
-            const speed = target / 80;
  
-            const updateCounter = () => {
+        const updateCounter = (currentTime) => {
  
-                if(count < target){
+            const elapsed = currentTime - startTime;
  
-                    count += speed;
+            const progress = Math.min(elapsed / duration, 1);
  
-                    counter.innerText = Math.ceil(count) + suffix;
  
-                    requestAnimationFrame(updateCounter);
+            // Smooth ease-out effect
+            const easeOut = 1 - Math.pow(1 - progress, 3);
  
-                }else{
  
-                    counter.innerText = target + suffix;
+            const currentValue = Math.floor(
+                easeOut * target
+            );
+ 
+ 
+            counter.textContent =
+                currentValue + suffix;
+ 
+ 
+            if (progress < 1) {
+ 
+                requestAnimationFrame(updateCounter);
+ 
+            } else {
+ 
+                counter.textContent =
+                    target + suffix;
+ 
+            }
+ 
+        };
+ 
+ 
+        requestAnimationFrame(updateCounter);
+ 
+    };
+ 
+ 
+    const observer = new IntersectionObserver(
+ 
+        (entries, observer) => {
+ 
+            entries.forEach(entry => {
+ 
+                if (entry.isIntersecting) {
+ 
+                    counters.forEach(counter => {
+ 
+                        startCounter(counter);
+ 
+                    });
+ 
+ 
+                    observer.unobserve(numbersSection);
  
                 }
  
-            };
+            });
  
-            updateCounter();
+        },
  
-            observer.unobserve(counter);
- 
+        {
+            threshold: 0.3
         }
  
-    });
+    );
  
-},{
-    threshold:0.5
+ 
+    observer.observe(numbersSection);
+ 
 });
  
-counters.forEach(counter => {
  
-    counterObserver.observe(counter);
  
-});     
- const darkBtn = document.querySelector(".dark-mode-btn");
-
-darkBtn.addEventListener("click",()=>{
-
-    document.body.classList.toggle("dark-mode");
-
-    if(document.body.classList.contains("dark-mode")){
-
-        localStorage.setItem("theme","dark");
-
-    }
-
-    else{
-
-        localStorage.setItem("theme","light");
-
-    }
-
-});
-
-window.onload=()=>{
-
-    if(localStorage.getItem("theme")==="dark"){
-
-        document.body.classList.add("dark-mode");
-
-    }
-
-}

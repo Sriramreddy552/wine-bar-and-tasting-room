@@ -1,253 +1,524 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
+ 
 <head>
-
+ 
     <meta charset="UTF-8">
+ 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <title>Vinora | Sign Up</title>
-
-    <!-- Google Fonts -->
-
+ 
+ 
+    <!-- =========================
+         GOOGLE FONTS
+    ========================== -->
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-
+ 
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap%22
+          rel="stylesheet">
+ 
+ 
+    <!-- =========================
+         FONT AWESOME
+    ========================== -->
+ 
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ 
+ 
+    <!-- =========================
+         SIGNUP CSS
+    ========================== -->
+ 
     <link rel="stylesheet" href="signup.css">
-   
-
+ 
 </head>
-
+ 
+ 
 <body>
-
+ 
+ 
 <section class="signup-page">
-   
-
-<div class="signup-container">
-
-    <!--========================
-    LEFT IMAGE
-    =========================-->
-
-    <div class="signup-image">
-
-        <img src="images/signup.jpg" alt="Vinora Wine">
-
-        <div class="image-overlay">
-          
-            <span>WELCOME TO VINORA</span>
-
+ 
+ 
+    <div class="signup-container">
+ 
+ 
+        <!-- =================================
+             LEFT IMAGE
+        ================================== -->
+ 
+        <div class="signup-image">
+ 
+            <img src="images/signup.jpg"
+                 alt="Vinora Wine">
+ 
+ 
+            <!-- IMAGE OVERLAY -->
+ 
+            <div class="image-overlay">
+ 
+ 
+                <span>
+                    WELCOME TO VINORA
+                </span>
+ 
+ 
+                <h2>
+ 
+                    Join Our
+                    <br>
+                    Exclusive Wine Circle
+ 
+                </h2>
+ 
+ 
+                <p>
+ 
+                    Create your Vinora account and unlock premium wine
+                    tastings, private cellar events, exclusive releases
+                    and member rewards.
+ 
+                </p>
+ 
+ 
+                <!-- STATS -->
+ 
+                <div class="overlay-stats">
+ 
+ 
+                    <div class="stat">
+ 
+                        <h3>10K+</h3>
+ 
+                        <p>
+                            Members
+                        </p>
+ 
+                    </div>
+ 
+ 
+                    <div class="stat">
+ 
+                        <h3>250+</h3>
+ 
+                        <p>
+                            Premium Wines
+                        </p>
+ 
+                    </div>
+ 
+ 
+                    <div class="stat">
+ 
+                        <h3>40+</h3>
+ 
+                        <p>
+                            Events
+                        </p>
+ 
+                    </div>
+ 
+ 
+                </div>
+ 
+ 
+            </div>
+ 
+        </div>
+ 
+ 
+ 
+        <!-- =================================
+             RIGHT FORM
+        ================================== -->
+ 
+        <div class="signup-box">
+ 
+ 
+            <!-- =================================
+                 CONTROLS
+            ================================== -->
+ 
+            <div class="box-controls">
+ 
+ 
+                <!-- RTL -->
+ 
+                <button id="rtlBtn"
+                        type="button"
+                        aria-label="Toggle RTL">
+ 
+                    <i class="fa-solid fa-language"></i>
+ 
+                </button>
+ 
+ 
+                <!-- DARK MODE -->
+ 
+                <button id="darkBtn"
+                        type="button"
+                        aria-label="Toggle Dark Mode">
+ 
+                    <i class="fa-solid fa-moon"></i>
+ 
+                </button>
+ 
+ 
+            </div>
+ 
+ 
+ 
+            <!-- =================================
+                 VINORA LOGO
+            ================================== -->
+ 
+            <div class="brand-logo" onclick="document.location='index.html'">
+ 
+                <img src="images/logo.png"
+                     alt="Vinora Wine Bar & Taste">
+ 
+            </div>
+ 
+ 
+ 
+            <!-- =================================
+                 FORM HEADING
+            ================================== -->
+ 
             <h2>
-                Join Our
-                <br>
-                Exclusive Wine Circle
-            </h2>
-
-            <p>
-
-                Create your Vinora account and unlock premium wine tastings,
-                private cellar events, exclusive releases and member rewards.
-
-            </p>
-
-            <div class="overlay-stats">
-
-                <div class="stat">
-
-                    <h3>10K+</h3>
-
-                    <p>Members</p>
-
-                </div>
-
-                <div class="stat">
-
-                    <h3>250+</h3>
-
-                    <p>Premium Wines</p>
-
-                </div>
-
-                <div class="stat">
-
-                    <h3>40+</h3>
-
-                    <p>Events</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!--========================
-    RIGHT FORM
-    =========================-->
-    <div class="box-controls">
-
-    
-    <div class="signup-box">
-
-        <h2>Create Account</h2>
-        
-
-        <p>
-
-            Become a Vinora member and enjoy unforgettable wine experiences.
-
-        </p>
-
-        <form>
-
-            <!-- Name -->
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-user"></i>
-
-                <input
-                    type="text"
-                    placeholder="Full Name"
-                    required>
-
-            </div>
-
-            <!-- Email -->
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <input
-                    type="email"
-                    placeholder="Email Address"
-                    required>
-
-            </div>
-
-            <!-- Phone -->
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-phone"></i>
-
-                <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    required>
-
-            </div>
-
-            <!-- Password Row -->
-
-            <div class="password-row">
-
-                <div class="input-box">
-
-                    <i class="fa-solid fa-lock"></i>
-
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        required>
-
-                </div>
-
-                <div class="input-box">
-
-                    <i class="fa-solid fa-lock"></i>
-
-                    <input
-                        type="password"
-                        placeholder="Confirm Password"
-                        required>
-
-                </div>
-
-            </div>
-
-            <!-- Checkbox -->
-
-            <div class="options">
-
-                <label>
-
-                    <input type="checkbox">
-
-                    I agree to the Terms & Conditions
-
-                </label>
-
-            </div>
-
-            <!-- Button -->
-
-            <button class="signup-btn">
-
                 Create Account
-
-            </button>
-
-        </form>
-
-        <!-- Divider -->
-
-        <div class="divider">
-
-            <span>OR</span>
-
-        </div>
-
-        <!-- Social Login -->
-
-        <a href="#" class="social-btn">
-
-            <i class="fa-brands fa-google"></i>
-
-            Continue with Google
-
-        </a>
-
-        <a href="#" class="social-btn">
-
-            <i class="fa-brands fa-apple"></i>
-
-            Continue with Apple
-
-        </a>
-
-        <!-- Login -->
-
-        <div class="login-link">
-
-            Already have an account?
-
-            <a href="login.html">
-
-                Login
-
+            </h2>
+ 
+ 
+            <p class="signup-description">
+ 
+                Become a Vinora member and enjoy unforgettable
+                wine experiences.
+ 
+            </p>
+ 
+ 
+ 
+            <!-- =================================
+                 SIGNUP FORM
+            ================================== -->
+ 
+            <form id="signupForm">
+ 
+ 
+                <!-- FULL NAME -->
+ 
+                <div class="input-box">
+ 
+                    <i class="fa-solid fa-user"></i>
+ 
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Full Name"
+                        autocomplete="name"
+                        required>
+ 
+                </div>
+ 
+ 
+ 
+                <!-- EMAIL -->
+ 
+                <div class="input-box">
+ 
+                    <i class="fa-solid fa-envelope"></i>
+ 
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        autocomplete="email"
+                        required>
+ 
+                </div>
+ 
+ 
+ 
+                <!-- PHONE -->
+ 
+                <div class="input-box">
+ 
+                    <i class="fa-solid fa-phone"></i>
+ 
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone Number"
+                        autocomplete="tel"
+                        required>
+ 
+                </div>
+ 
+ 
+ 
+                <!-- PASSWORD ROW -->
+ 
+                <div class="password-row">
+ 
+ 
+                    <!-- PASSWORD -->
+ 
+                    <div class="input-box">
+ 
+                        <i class="fa-solid fa-lock"></i>
+ 
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            autocomplete="new-password"
+                            required>
+ 
+                    </div>
+ 
+ 
+ 
+                    <!-- CONFIRM PASSWORD -->
+ 
+                    <div class="input-box">
+ 
+                        <i class="fa-solid fa-lock"></i>
+ 
+                        <input
+                            type="password"
+                            name="confirm-password"
+                            placeholder="Confirm Password"
+                            autocomplete="new-password"
+                            required>
+ 
+                    </div>
+ 
+ 
+                </div>
+ 
+ 
+ 
+                <!-- TERMS -->
+ 
+                <div class="options">
+ 
+                    <label>
+ 
+                        <input
+                            type="checkbox"
+                            required>
+ 
+                        <span>
+                            I agree to the Terms &amp; Conditions
+                        </span>
+ 
+                    </label>
+ 
+                </div>
+ 
+ 
+ 
+                <!-- SIGNUP BUTTON -->
+ 
+                <button
+                    type="submit"
+                    class="signup-btn">
+ 
+                    Create Account
+ 
+                </button>
+ 
+ 
+            </form>
+ 
+ 
+ 
+            <!-- =================================
+                 DIVIDER
+            ================================== -->
+ 
+            <div class="divider">
+ 
+                <span>
+                    OR
+                </span>
+ 
+            </div>
+ 
+ 
+ 
+            <!-- =================================
+                 GOOGLE
+            ================================== -->
+ 
+            <a href="#"
+               class="social-btn">
+ 
+                <i class="fa-brands fa-google"></i>
+ 
+                <span>
+                    Continue with Google
+                </span>
+ 
             </a>
-
+ 
+ 
+ 
+            <!-- =================================
+                 APPLE
+            ================================== -->
+ 
+            <a href="#"
+               class="social-btn">
+ 
+                <i class="fa-brands fa-apple"></i>
+ 
+                <span>
+                    Continue with Apple
+                </span>
+ 
+            </a>
+ 
+ 
+ 
+            <!-- =================================
+                 LOGIN LINK
+            ================================== -->
+ 
+            <div class="login-link">
+ 
+                <span>
+                    Already have an account?
+                </span>
+ 
+                <a href="login.html">
+                    Login
+                </a>
+ 
+            </div>
+ 
+ 
         </div>
-
+ 
+ 
     </div>
-
-</div>
-
+ 
+ 
 </section>
+ 
+ 
+ 
+<!-- =================================
+     JAVASCRIPT
+================================== -->
+ 
 <script src="signup.js"></script>
-
+ 
+ 
+<script>
+ 
+ 
+/* =================================
+   RTL TOGGLE
+================================= */
+ 
+const rtlBtn = document.getElementById("rtlBtn");
+ 
+rtlBtn.addEventListener("click", function () {
+ 
+    document.body.classList.toggle("rtl");
+ 
+    if (document.body.classList.contains("rtl")) {
+ 
+        document.documentElement.setAttribute("dir", "rtl");
+ 
+    } else {
+ 
+        document.documentElement.setAttribute("dir", "ltr");
+ 
+    }
+ 
+});
+ 
+ 
+ 
+/* =================================
+   DARK MODE
+================================= */
+ 
+const darkBtn = document.getElementById("darkBtn");
+ 
+darkBtn.addEventListener("click", function () {
+ 
+    document.body.classList.toggle("dark");
+ 
+ 
+ 
+    /* CHANGE ICON */
+ 
+    const icon = darkBtn.querySelector("i");
+ 
+ 
+    if (document.body.classList.contains("dark")) {
+ 
+        icon.classList.remove("fa-moon");
+ 
+        icon.classList.add("fa-sun");
+ 
+    } else {
+ 
+        icon.classList.remove("fa-sun");
+ 
+        icon.classList.add("fa-moon");
+ 
+    }
+ 
+});
+ 
+ 
+ 
+/* =================================
+   PASSWORD VALIDATION
+================================= */
+ 
+const signupForm = document.getElementById("signupForm");
+ 
+signupForm.addEventListener("submit", function (event) {
+ 
+    const password =
+        document.querySelector(
+            'input[name="password"]'
+        ).value;
+ 
+ 
+    const confirmPassword =
+        document.querySelector(
+            'input[name="confirm-password"]'
+        ).value;
+ 
+ 
+    if (password !== confirmPassword) {
+ 
+        event.preventDefault();
+ 
+        alert("Passwords do not match.");
+ 
+    }
+ 
+});
+ 
+ 
+</script>
+ 
+ 
 </body>
-
+ 
 </html>

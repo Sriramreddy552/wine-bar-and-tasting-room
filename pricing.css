@@ -12,7 +12,7 @@ body{
  
  
 body{
-   font-family:'cormorant garamond',inter;
+   font-family:'cormorant garamond',inter;;
 }
  
 /*==============================
@@ -29,1626 +29,4495 @@ ROOT VARIABLES
     --border:#ececec;
     --text:#666;
  
-} 
-/*==================================
-        PRICING HERO SECTION
-==================================*/
- 
-.pricing-hero{
-    position:relative;
-    width:100%;
-    min-height:100vh;
- 
-    background-image: url(/images/price\ hero.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
- 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
- 
-    overflow:hidden;
- 
-    animation:bgZoom 18s ease-in-out infinite alternate;
 }
- 
-/*==================================
-        OVERLAY
-==================================*/
- 
-.hero-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(26,26,26,.68);
+.span{
+    color: var(--primary);
 }
- 
-/*==================================
-        CONTENT
-==================================*/
- 
-.hero-content{
-    position:relative;
-    z-index:2;
-    max-width:850px;
-    padding:20px;
- 
-    color:var(--white);
+.span-2{
+    color: var(--secondary);
 }
- 
-/*==================================
-        TAG
-==================================*/
- 
-.hero-tag{
- 
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
- 
-    padding:12px 26px;
- 
-    border-radius:50px;
- 
-    background:rgba(255,255,255,.12);
- 
-    border:1px solid rgba(255,255,255,.2);
- 
-    color:var(--secondary);
- 
-    font-size:15px;
-    font-weight:600;
- 
-    backdrop-filter:blur(8px);
- 
-    margin-bottom:25px;
- 
-    animation:slideDown 1s ease;
+/*==============================*
+        PRICING HERO
+*==============================*/
+
+.pricing-hero {
+
+    position: relative;
+
+    min-height: 90vh;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-image: url('images/blog.2.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
 }
- 
-.hero-tag i{
-    font-size:18px;
+
+.pricing-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(26, 26, 26, 0.68);
+
 }
- 
-/*==================================
-        HEADING
-==================================*/
- 
-.hero-content h1{
- 
-    font-size:68px;
-    font-weight:700;
- 
-    line-height:1.2;
- 
-    margin-bottom:20px;
- 
-    animation:rotateFade 1.2s ease;
- 
+
+.pricing-hero-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 90%;
+
+    max-width: 900px;
+
+    color: var(--white);
+
 }
- 
-.hero-content h1 span{
- 
-    color:var(--secondary);
- 
+
+.pricing-hero-subtitle {
+
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: var(--secondary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
 }
- 
-/*==================================
-        PARAGRAPH
-==================================*/
- 
-.hero-content p{
- 
-    max-width:700px;
- 
-    margin:0 auto 40px;
- 
-    color:#f2f2f2;
- 
-    font-size:18px;
- 
-    line-height:1.8;
- 
-    animation:fadeLeft 1.5s ease;
- 
+
+.pricing-hero-content h1 {
+
+    margin-bottom: 25px;
+
+    color: var(--white);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 50px;
+
+    font-weight: 600;
+
+    line-height: 0.95;
+
 }
- 
-/*==================================
+
+.pricing-hero-content p {
+
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+.pricing-hero-btn {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: var(--primary);
+
+    color: var(--white);
+    border-radius: 35px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+}
+.pricing-hero-btn:hover {
+
+    background: var(--secondary);
+
+    color: var(--dark);
+
+    transition: 0.3s;
+
+}
+/*==============================*
+        TASTING EXPERIENCES
+*==============================*/
+
+.tasting-experiences {
+
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--light);
+
+}
+
+.pricing-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+/*==============================*
+        PRICING HEADING
+*==============================*/
+
+.pricing-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+
+}
+
+.pricing-heading h2 {
+
+    margin: 10px 0 20px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+}
+
+.pricing-heading p {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+/*==============================*
+        PRICING GRID
+*==============================*/
+
+.pricing-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: stretch;
+
+    gap: 25px;
+
+}
+
+.pricing-card {
+
+    position: relative;
+
+    padding: 40px 35px;
+    border-radius: 30px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    
+
+}
+
+.pricing-card.featured {
+
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    transform: translateY(-15px);
+
+}
+
+.featured-badge {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 25px;
+
+    padding: 8px 15px;
+
+    background: var(--secondary);
+
+    color: var(--dark);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+/*==============================*
+        CARD CONTENT
+*==============================*/
+
+.pricing-label {
+
+    color: var(--secondary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+.pricing-card h3 {
+
+    margin: 12px 0 15px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+}
+
+.pricing-card.featured h3 {
+
+    color: var(--white);
+
+}
+
+.pricing-description {
+
+    min-height: 75px;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+.pricing-card.featured .pricing-description {
+
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+/*==============================*
+        PRICE
+*==============================*/
+
+.price {
+
+    margin-top: 25px;
+
+    color: var(--primary);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 58px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+.price span {
+
+    font-size: 28px;
+
+    vertical-align: top;
+
+}
+
+.price small {
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+}
+
+.pricing-card.featured .price {
+
+    color: var(--secondary);
+
+}
+
+.pricing-card.featured .price small {
+
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+
+/*==============================*
+        DIVIDER
+*==============================*/
+
+.pricing-divider {
+
+    width: 100%;
+
+    height: 1px;
+
+    margin: 30px 0;
+
+    background: var(--border);
+
+}
+
+.pricing-card.featured .pricing-divider {
+
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+
+/*==============================*
+        FEATURES
+*==============================*/
+
+.pricing-features {
+
+    min-height: 180px;
+
+    padding: 0;
+
+    margin: 0 0 30px;
+
+    list-style: none;
+
+}
+
+.pricing-features li {
+
+    position: relative;
+
+    padding: 7px 0 7px 20px;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+}
+
+.pricing-features li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: var(--secondary);
+
+    font-weight: 600;
+
+}
+
+.pricing-card.featured .pricing-features li {
+
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+
+/*==============================*
         BUTTON
-==================================*/
- 
-.hero-btn{
- 
-    display:inline-flex;
-    align-items:center;
-    gap:12px;
- 
-    padding:16px 36px;
- 
-    background:var(--primary);
- 
-    color:var(--white);
- 
-    text-decoration:none;
- 
-    border-radius:50px;
- 
-    font-size:17px;
- 
-    font-weight:600;
- 
-    transition:.4s;
- 
-    animation:buttonUp 1.8s ease,pulse 2.5s infinite;
- 
-}
- 
-.hero-btn:hover{
- 
-    background:var(--secondary);
- 
-    color:var(--dark);
- 
-    transform:translateY(-8px);
- 
-    box-shadow:0 18px 35px rgba(0,0,0,.35);
- 
-}
- 
-.hero-btn i{
- 
-    transition:.4s;
- 
-}
- 
-.hero-btn:hover i{
- 
-    transform:translateX(8px);
- 
-}
- 
-/*==================================
-        DECORATIVE CIRCLE
-==================================*/
- 
-.pricing-hero::after{
- 
-    content:"";
- 
-    position:absolute;
- 
-    width:300px;
-    height:300px;
- 
-    background:rgba(255,255,255,.05);
- 
-    border-radius:50%;
- 
-    top:8%;
-    right:8%;
- 
-    animation:floatCircle 8s ease-in-out infinite;
- 
-}
- 
-/*==================================
-        ANIMATIONS
-==================================*/
- 
-@keyframes slideDown{
- 
-    from{
-        opacity:0;
-        transform:translateY(-60px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes rotateFade{
- 
-    from{
-        opacity:0;
-        transform:rotateX(90deg) scale(.8);
-    }
- 
-    to{
-        opacity:1;
-        transform:rotateX(0) scale(1);
-    }
- 
-}
- 
-@keyframes fadeLeft{
- 
-    from{
-        opacity:0;
-        transform:translateX(-80px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
- 
-}
- 
-@keyframes buttonUp{
- 
-    from{
-        opacity:0;
-        transform:translateY(70px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes pulse{
- 
-    0%{
-        box-shadow:0 0 0 0 rgba(123,30,58,.6);
-    }
- 
-    70%{
-        box-shadow:0 0 0 18px rgba(123,30,58,0);
-    }
- 
-    100%{
-        box-shadow:0 0 0 0 rgba(123,30,58,0);
-    }
- 
-}
- 
-@keyframes bgZoom{
- 
-    0%{
-        background-size:100%;
-    }
- 
-    100%{
-        background-size:112%;
-    }
- 
-}
- 
-@keyframes floatCircle{
- 
-    0%{
-        transform:translateY(0);
-    }
- 
-    50%{
-        transform:translateY(30px);
-    }
- 
-    100%{
-        transform:translateY(0);
-    }
- 
-}
- 
-/*==================================
-        RESPONSIVE
-==================================*/
- 
-@media(max-width:1024px){
- 
-    .hero-content h1{
-        font-size:56px;
-    }
- 
-}
- 
-@media(max-width:768px){
- 
-    .pricing-hero{
-        min-height:90vh;
-        padding:80px 20px;
-    }
- 
-    .hero-content h1{
-        font-size:42px;
-    }
- 
-    .hero-content p{
-        font-size:16px;
-    }
- 
-}
- 
-@media(max-width:360px){
- 
-    .hero-content h1{
-        font-size:30px;
-    }
- 
-    .hero-content p{
-        font-size:14px;
-    }
- 
-    .hero-btn{
-        width:100%;
-        justify-content:center;
-        padding:15px;
-    }
- 
-    .hero-tag{
-        font-size:13px;
-        padding:10px 18px;
-    }
- 
-}
- 
- 
- 
- 
- 
-/*==================================
-        PRICING PACKAGES SECTION
-==================================*/
- 
-.pricing-packages{
-    width:100%;
-    padding:100px 5%;
-    background:var(--light);
-    overflow:hidden;
-}
- 
-/*==================================
-        SECTION TITLE
-==================================*/
- 
-.section-title{
-    max-width:700px;
-    margin:0 auto 60px;
-    text-align:center;
-}
- 
-.section-title span{
-    display:inline-block;
-    padding:10px 22px;
-    background:rgba(123,30,58,.08);
-    color:var(--secondary);
-    border-radius:30px;
-    font-size:15px;
-    font-weight:600;
-    margin-bottom:18px;
-    animation:fadeDown 1s ease;
-}
- 
-.section-title h2{
-    font-size:42px;
-    color:var(--dark);
-    margin-bottom:18px;
-    animation:zoomText 1s ease;
-}
- 
-.section-title p{
-    color:var(--text);
-    font-size:16px;
-    line-height:1.8;
-    animation:fadeUp 1.2s ease;
-}
- 
-/*==================================
-        PRICING CONTAINER
-==================================*/
- 
-.pricing-container{
-    max-width:1200px;
-    margin:auto;
- 
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
- 
-/*==================================
-        PRICE CARD
-==================================*/
- 
-.price-card{
-    position:relative;
-    background:var(--white);
-    border:1px solid var(--border);
-    border-radius:20px;
-    padding:35px 30px;
-    text-align:center;
-    overflow:hidden;
-    transition:.4s;
-    animation:cardUp 1s ease;
-}
- 
-.price-card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
-    border-color:var(--primary);
-}
- 
-.price-card::before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:5px;
-    background:var(--primary);
-    transition:.4s;
-}
- 
-.price-card:hover::before{
-    background:var(--secondary);
-}
- 
-/*==================================
-        FEATURED CARD
-==================================*/
- 
-.featured{
-    transform:scale(1.05);
-    border:2px solid var(--secondary);
-    z-index:2;
-}
- 
-.featured:hover{
-    transform:scale(1.05) translateY(-12px);
-}
- 
-.featured-tag{
-    position:absolute;
-    top:18px;
-    right:-45px;
-    width:170px;
-    padding:8px 0;
-    background:var(--secondary);
-    color:var(--dark);
-    font-size:14px;
-    font-weight:700;
-    text-align:center;
-    transform:rotate(45deg);
-}
- 
-/*==================================
-        PRICE HEADER
-==================================*/
- 
-.price-header h3{
-    color:var(--primary);
-    font-size:28px;
-    margin-bottom:15px;
-}
- 
-.price-header h1{
-    font-size:55px;
-    color:var(--dark);
-    margin-bottom:5px;
-}
- 
-.price-header span{
-    color:var(--text);
-    font-size:15px;
-}
- 
-/*==================================
-        PRICE LIST
-==================================*/
- 
-.price-list{
-    list-style:none;
-    margin:35px 0;
-    padding:0;
-}
- 
-.price-list li{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    padding:14px 0;
-    border-bottom:1px solid var(--border);
-    color:var(--text);
-    font-size:15px;
-}
- 
-.price-list li:last-child{
-    border:none;
-}
- 
-.price-list i{
-    color:var(--primary);
-    font-size:20px;
-    transition:.4s;
-}
- 
-.price-card:hover .price-list i{
-    color:var(--secondary);
-    transform:rotate(360deg);
-}
- 
-/*==================================
-        BUTTON
-==================================*/
- 
-.price-btn{
-    display:inline-block;
-    width:100%;
-    padding:15px;
-    text-decoration:none;
-    border-radius:50px;
-    background:var(--primary);
-    color:var(--white);
-    font-size:16px;
-    font-weight:600;
-    transition:.4s;
-}
- 
-.price-btn:hover{
-    background:var(--secondary);
-    color:var(--dark);
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
- 
-/*==================================
-        ANIMATIONS
-==================================*/
- 
-@keyframes fadeDown{
- 
-    from{
-        opacity:0;
-        transform:translateY(-40px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes zoomText{
- 
-    from{
-        opacity:0;
-        transform:scale(.8);
-    }
- 
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
- 
-}
- 
-@keyframes fadeUp{
- 
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes cardUp{
- 
-    from{
-        opacity:0;
-        transform:translateY(80px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-/*==================================
-        HOVER ANIMATION
-==================================*/
- 
-.price-card:hover .price-header h3{
-    color:var(--secondary);
-}
- 
-.price-card:hover .price-header h1{
-    transform:scale(1.08);
-    transition:.4s;
-}
- 
-/*==================================
-        RESPONSIVE
-==================================*/
- 
-@media(max-width:1024px){
- 
-    .pricing-container{
-        grid-template-columns:repeat(2,1fr);
-    }
- 
-    .price-card:last-child{
-        grid-column:1/3;
-        max-width:420px;
-        margin:auto;
-    }
- 
-}
- 
-@media(max-width:768px){
- 
-    .pricing-packages{
-        padding:80px 20px;
-    }
- 
-    .section-title h2{
-        font-size:34px;
-    }
- 
-    .pricing-container{
-        grid-template-columns:1fr;
-    }
- 
-    .price-card,
-    .price-card:last-child{
-        max-width:100%;
-        grid-column:auto;
-    }
- 
-    .featured{
-        transform:none;
-    }
- 
-    .featured:hover{
-        transform:translateY(-10px);
-    }
- 
-}
- 
-@media(max-width:360px){
- 
-    .pricing-packages{
-        padding:60px 15px;
-    }
- 
-    .section-title h2{
-        font-size:28px;
-    }
- 
-    .price-card{
-        padding:25px 20px;
-    }
- 
-    .price-header h1{
-        font-size:42px;
-    }
- 
-    .price-header h3{
-        font-size:22px;
-    }
- 
-    .price-list li{
-        font-size:14px;
-    }
- 
-    .price-btn{
-        font-size:15px;
-    }
- 
-}
- 
- 
- 
- 
- 
-/*==================================
-        PACKAGE COMPARISON
-==================================*/
- 
-.compare-packages{
-    width:100%;
-    padding:100px 5%;
-    background:var(--light);
-    overflow:hidden;
-}
- 
-/*==================================
-        SECTION TITLE
-==================================*/
- 
-.compare-packages .section-title{
-    max-width:700px;
-    margin:0 auto 60px;
-    text-align:center;
-}
- 
-.compare-packages .section-title span{
-    display:inline-block;
-    padding:10px 24px;
-    background:rgba(123,30,58,.08);
-    color:var(--secondary);
-    border-radius:30px;
-    font-size:15px;
-    font-weight:600;
-    margin-bottom:18px;
-    animation:fadeDown 1s ease;
-}
- 
-.compare-packages .section-title h2{
-    font-size:42px;
-    color:var(--dark);
-    margin-bottom:15px;
-    animation:zoomIn .9s ease;
-}
- 
-.compare-packages .section-title p{
-    color:var(--text);
-    line-height:1.8;
-    font-size:16px;
-    animation:fadeUp 1.2s ease;
-}
- 
-/*==================================
-        TABLE CONTAINER
-==================================*/
- 
-.comparison-table{
-    max-width:1100px;
-    margin:auto;
-    background:var(--white);
-    border-radius:18px;
-    overflow:hidden;
-    border:1px solid var(--border);
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-    animation:tableUp 1s ease;
-}
- 
-/*==================================
-        TABLE
-==================================*/
- 
-.comparison-table table{
-    width:100%;
-    border-collapse:collapse;
-}
- 
-.comparison-table thead{
-    background:var(--primary);
-}
- 
-.comparison-table th{
-    color:var(--white);
-    padding:22px;
-    font-size:18px;
-    font-weight:600;
-    text-align:center;
-}
- 
-.comparison-table th:first-child{
-    text-align:left;
-    padding-left:35px;
-}
- 
-.comparison-table td{
-    padding:20px;
-    text-align:center;
-    border-bottom:1px solid var(--border);
-    color:var(--text);
-    transition:.3s;
-}
- 
-.comparison-table td:first-child{
-    text-align:left;
-    padding-left:35px;
-    font-weight:600;
-    color:var(--dark);
-}
- 
-/*==================================
-        ROW HOVER
-==================================*/
- 
-.comparison-table tbody tr{
-    transition:.3s;
-}
- 
-.comparison-table tbody tr:hover{
-    background:#faf8f4;
-    transform:scale(1.01);
-}
- 
-/*==================================
-        ICONS
-==================================*/
- 
-.comparison-table td i{
-    margin-right:8px;
-    font-size:18px;
-}
- 
-.check{
-    color:#22c55e;
-    font-size:24px !important;
-}
- 
-.cross{
-    color:#ef4444;
-    font-size:24px !important;
-}
- 
-/*==================================
-        COLUMN HOVER
-==================================*/
- 
-.comparison-table tbody td:hover{
-    background:rgba(123,30,58,.05);
-}
- 
-/*==================================
-        ANIMATIONS
-==================================*/
- 
-@keyframes fadeDown{
- 
-    from{
-        opacity:0;
-        transform:translateY(-40px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes fadeUp{
- 
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes zoomIn{
- 
-    from{
-        opacity:0;
-        transform:scale(.8);
-    }
- 
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
- 
-}
- 
-@keyframes tableUp{
- 
-    from{
-        opacity:0;
-        transform:translateY(70px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-/*==================================
-        TABLE HEADER HOVER
-==================================*/
- 
-.comparison-table th:hover{
-    background:var(--secondary);
-    color:var(--dark);
-    transition:.3s;
-}
- 
-/*==================================
-        RESPONSIVE
-==================================*/
- 
-@media(max-width:1024px){
- 
-    .comparison-table{
-        overflow-x:auto;
-    }
- 
-    .comparison-table table{
-        min-width:800px;
-    }
- 
-}
- 
-@media(max-width:768px){
- 
-    .compare-packages{
-        padding:80px 20px;
-    }
- 
-    .compare-packages .section-title h2{
-        font-size:34px;
-    }
- 
-    .comparison-table table{
-        min-width:700px;
-    }
- 
-    .comparison-table th,
-    .comparison-table td{
-        padding:16px;
-        font-size:15px;
-    }
- 
-}
- 
-@media(max-width:360px){
- 
-    .compare-packages{
-        padding:60px 15px;
-    }
- 
-    .compare-packages .section-title h2{
-        font-size:28px;
-    }
- 
-    .comparison-table table{
-        min-width:650px;
-    }
- 
-    .comparison-table th,
-    .comparison-table td{
-        padding:14px;
-        font-size:14px;
-    }
- 
-}
- 
- 
- 
- 
- 
-/*==================================
-        PRICING FAQ SECTION
-==================================*/
- 
-.pricing-faq{
-    width:100%;
-    padding:100px 5%;
-    background:var(--light);
-    overflow:hidden;
-}
- 
-/*==================================
-        SECTION TITLE
-==================================*/
- 
-.pricing-faq .section-title{
-    max-width:700px;
-    margin:0 auto 60px;
-    text-align:center;
-}
- 
-.pricing-faq .section-title span{
-    display:inline-block;
-    padding:10px 22px;
-    background:rgba(123,30,58,.08);
-    color:var(--secondary);
-    border-radius:30px;
-    font-size:15px;
-    font-weight:600;
-    margin-bottom:18px;
-    animation:fadeDown 1s ease;
-}
- 
-.pricing-faq .section-title h2{
-    font-size:42px;
-    color:var(--dark);
-    margin-bottom:18px;
-    animation:zoomIn .8s ease;
-}
- 
-.pricing-faq .section-title p{
-    color:var(--text);
-    font-size:16px;
-    line-height:1.8;
-    animation:fadeUp 1s ease;
-}
- 
-/*==================================
-        FAQ CONTAINER
-==================================*/
- 
-.faq-container{
-    max-width:900px;
-    margin:auto;
-}
- 
-/*==================================
-        FAQ ITEM
-==================================*/
- 
-.faq-item{
-    background:var(--white);
-    border:1px solid var(--border);
-    border-radius:15px;
-    margin-bottom:20px;
-    overflow:hidden;
-    transition:.4s;
-    animation:faqSlide .8s ease;
-}
- 
-.faq-item:hover{
-    transform:translateY(-5px);
-    border-color:var(--primary);
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-}
- 
-/*==================================
-        ACTIVE ITEM
-==================================*/
- 
-.faq-item.active{
-    border-color:var(--primary);
-}
- 
-/*==================================
-        QUESTION
-==================================*/
- 
-.faq-question{
-    width:100%;
-    background:none;
-    border:none;
-    outline:none;
-    cursor:pointer;
- 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
- 
-    padding:22px 28px;
- 
-    font-size:18px;
-    font-weight:600;
-    color:var(--dark);
- 
-    transition:.3s;
-}
- 
-.faq-question:hover{
-    color:var(--primary);
-}
- 
-.faq-question i{
- 
-    width:42px;
-    height:42px;
- 
-    display:flex;
-    justify-content:center;
-    align-items:center;
- 
-    border-radius:50%;
- 
-    background:var(--primary);
-    color:var(--white);
- 
-    font-size:18px;
- 
-    transition:.4s;
-}
- 
-.faq-item.active .faq-question i{
- 
-    transform:rotate(45deg);
- 
-    background:var(--secondary);
- 
-    color:var(--dark);
- 
-}
- 
-/*==================================
-        ANSWER
-==================================*/
- 
-.faq-answer{
- 
-    max-height:0;
- 
-    overflow:hidden;
- 
-    transition:max-height .5s ease;
- 
-}
- 
-.faq-answer p{
- 
-    padding:0 28px 25px;
- 
-    color:var(--text);
- 
-    line-height:1.8;
- 
-    font-size:15px;
- 
-}
- 
-.faq-item.active .faq-answer{
- 
-    max-height:220px;
- 
-}
- 
-/*==================================
-        ANIMATION
-==================================*/
- 
-@keyframes fadeDown{
- 
-    from{
-        opacity:0;
-        transform:translateY(-40px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes fadeUp{
- 
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
- 
-}
- 
-@keyframes zoomIn{
- 
-    from{
-        opacity:0;
-        transform:scale(.8);
-    }
- 
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
- 
-}
- 
-@keyframes faqSlide{
- 
-    from{
-        opacity:0;
-        transform:translateX(-60px);
-    }
- 
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
- 
-}
- 
-/*==================================
-        RESPONSIVE
-==================================*/
- 
-@media(max-width:1024px){
- 
-    .pricing-faq{
-        padding:90px 40px;
-    }
- 
-}
- 
-@media(max-width:768px){
- 
-    .pricing-faq{
-        padding:80px 20px;
-    }
- 
-    .pricing-faq .section-title h2{
-        font-size:34px;
-    }
- 
-    .faq-question{
-        padding:18px 20px;
-        font-size:16px;
-    }
- 
-    .faq-answer p{
-        padding:0 20px 20px;
-    }
- 
-}
- 
-@media(max-width:360px){
- 
-    .pricing-faq{
-        padding:60px 15px;
-    }
- 
-    .pricing-faq .section-title h2{
-        font-size:28px;
-    }
- 
-    .faq-question{
-        font-size:15px;
-        padding:16px;
-    }
- 
-    .faq-question i{
-        width:36px;
-        height:36px;
-        font-size:15px;
-    }
- 
-    .faq-answer p{
-        font-size:14px;
-    }
- 
-}
- 
- 
- 
- 
-/*==================================
-        CALL TO ACTION
-==================================*/
- 
-.pricing-cta{
-    position:relative;
-    width:100%;
-    height:420px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:0 5%;
-    overflow:hidden;
- 
-    background-image: url(/images/cta.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
- 
-/*==================================
-        OVERLAY
-==================================*/
- 
-.cta-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.65);
-}
- 
-/*==================================
-        CONTENT
-==================================*/
- 
-.cta-content{
-    position:relative;
-    z-index:2;
-    max-width:800px;
-    text-align:center;
-    color:#fff;
- 
-    animation:fadeUp 1s ease;
-}
- 
-/*==================================
-        TAG
-==================================*/
- 
-.cta-tag{
- 
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
- 
-    padding:10px 22px;
- 
-    background:rgba(255,255,255,.15);
- 
-    border:1px solid rgba(255,255,255,.25);
- 
-    backdrop-filter:blur(10px);
- 
-    border-radius:40px;
- 
-    font-size:15px;
-    font-weight:600;
- 
-    margin-bottom:25px;
- 
-}
- 
-.cta-tag i{
- 
-    color:var(--secondary);
-    font-size:18px;
- 
-}
- 
-/*==================================
-        HEADING
-==================================*/
- 
-.cta-content h2{
- 
-    font-size:48px;
-    line-height:1.3;
-    margin-bottom:20px;
- 
-    color:#fff;
- 
-    animation:slideDown .9s ease;
- 
-}
- 
-.cta-content h2 span{
- 
-    color:var(--secondary);
- 
-}
- 
-/*==================================
-        PARAGRAPH
-==================================*/
- 
-.cta-content p{
- 
-    max-width:650px;
-    margin:0 auto 35px;
- 
-    color:#f2f2f2;
-    line-height:1.8;
-    font-size:16px;
- 
-}
- 
-/*==================================
-        BUTTONS
-==================================*/
- 
-.cta-buttons{
- 
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
- 
-}
- 
-.btn-primary,
-.btn-secondary{
- 
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
- 
-    text-decoration:none;
- 
-    padding:15px 35px;
- 
-    border-radius:50px;
- 
-    font-size:16px;
-    font-weight:600;
- 
-    transition:.4s;
- 
-}
- 
-.btn-primary{
- 
-    background:var(--primary);
-    color:#fff;
- 
-}
- 
-.btn-primary:hover{
- 
-    background:var(--secondary);
-    color:var(--dark);
- 
-    transform:translateY(-6px);
- 
-}
- 
-.btn-secondary{
- 
-    border:2px solid #fff;
-    color:#fff;
-    background:transparent;
- 
-}
- 
-.btn-secondary:hover{
- 
-    background:#fff;
-    color:var(--primary);
- 
-    transform:translateY(-6px);
- 
-}
- 
-.btn-primary i,
-.btn-secondary i{
- 
-    font-size:18px;
- 
-}
- 
-/*==================================
-        ANIMATIONS
-==================================*/
- 
-@keyframes slideDown{
- 
-    from{
- 
-        opacity:0;
-        transform:translateY(-50px);
- 
-    }
- 
-    to{
- 
-        opacity:1;
-        transform:translateY(0);
- 
-    }
- 
-}
- 
-@keyframes fadeUp{
- 
-    from{
- 
-        opacity:0;
-        transform:translateY(50px);
- 
-    }
- 
-    to{
- 
-        opacity:1;
-        transform:translateY(0);
- 
-    }
- 
-}
- 
-/*==================================
-        RESPONSIVE
-==================================*/
- 
-@media(max-width:1024px){
- 
-    .pricing-cta{
- 
-        height:380px;
- 
-    }
- 
-    .cta-content h2{
- 
-        font-size:40px;
- 
-    }
- 
-}
- 
-@media(max-width:768px){
- 
-    .pricing-cta{
- 
-        height:340px;
-        padding:0 20px;
- 
-    }
- 
-    .cta-content h2{
- 
-        font-size:32px;
- 
-    }
- 
-    .cta-content p{
- 
-        font-size:15px;
- 
-    }
- 
-    .cta-buttons{
- 
-        flex-direction:column;
-        align-items:center;
- 
-    }
- 
-    .btn-primary,
-    .btn-secondary{
- 
-        width:260px;
- 
-    }
- 
-}
- 
-@media(max-width:360px){
- 
-    .pricing-cta{
- 
-        height:300px;
-        padding:0 15px;
- 
-    }
- 
-    .cta-tag{
- 
-        font-size:13px;
-        padding:8px 16px;
- 
-    }
- 
-    .cta-content h2{
- 
-        font-size:26px;
- 
-    }
- 
-    .cta-content p{
- 
-        font-size:14px;
-        margin-bottom:25px;
- 
-    }
- 
-    .btn-primary,
-    .btn-secondary{
- 
-        width:220px;
-        padding:13px 20px;
-        font-size:14px;
- 
-    }
- 
+*==============================*/
+
+.pricing-btn {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: 1px solid var(--primary);
+
+    color: var(--primary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+    border-radius: 35px;
+
+}
+.pricing-btn:hover {
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    transition: 0.3s;
+
+}
+
+.pricing-card.featured .pricing-btn {
+
+    background: var(--primary);
+
+    border-color: var(--secondary);
+
+    color: var(--light);
+
+}
+.pricing-card.featured .pricing-btn:hover {
+
+    background: var(--secondary);
+
+    color: var(--dark);
+
+    transition: 0.3s;
+
+}
+/*==============================*
+        WINE & CHEESE
+*==============================*/
+
+.pairing-section {
+
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--white);
+
+}
+
+.pairing-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+/*==============================*
+        PAIRING IMAGE
+*==============================*/
+
+.pairing-image {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+.pairing-image img {
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.pairing-price {
+
+    position: absolute;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 120px;
+
+    height: 120px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--secondary);
+
+    color: var(--dark);
+
+    text-align: center;
+
+}
+
+.pairing-price span {
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+.pairing-price strong {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 38px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+.pairing-price small {
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+}
+
+
+/*==============================*
+        PAIRING CONTENT
+*==============================*/
+
+.pairing-content {
+
+    max-width: 520px;
+
+}
+
+.pairing-content h2 {
+
+    margin: 10px 0 25px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+
+    line-height: 0.95;
+
+}
+
+.pairing-content > p {
+
+    margin-bottom: 30px;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.85;
+
+}
+
+
+/*==============================*
+        PAIRING LIST
+*==============================*/
+
+.pairing-list {
+
+    border-top: 1px solid var(--border);
+
+}
+
+.pairing-item {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.pairing-item > span {
+
+    min-width: 25px;
+
+    color: var(--secondary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+.pairing-item h3 {
+
+    margin-bottom: 3px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+}
+
+.pairing-item p {
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+/*==============================*
+        PAIRING BUTTON
+*==============================*/
+
+.pairing-btn {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 28px;
+
+    background: var(--primary);
+
+    color: var(--white);
+    border-radius: 35px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+}
+.pairing-btn:hover{
+    background: var(--secondary);
+    color: #000;
+    transition: 0.3s;
+}
+/*==============================*
+        PRIVATE TASTING
+*==============================*/
+
+.private-tasting {
+
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--light);
+
+}
+
+.private-tasting-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+/*==============================*
+        PRIVATE CONTENT
+*==============================*/
+
+.private-tasting-content {
+
+    max-width: 540px;
+
+}
+
+.private-tasting-content h2 {
+
+    margin: 10px 0 25px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+
+    line-height: 0.95;
+
+}
+
+.private-tasting-content > p {
+
+    margin-bottom: 35px;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.85;
+
+}
+
+
+/*==============================*
+        PRIVATE DETAILS
+*==============================*/
+
+.private-details {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-bottom: 35px;
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.private-detail {
+
+    padding: 20px 15px;
+
+    border-right: 1px solid var(--border);
+
+}
+
+.private-detail:last-child {
+
+    border-right: none;
+
+}
+
+.private-detail strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--primary);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+}
+
+.private-detail span {
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+/*==============================*
+        PRIVATE BUTTON
+*==============================*/
+
+.private-btn {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+    border-radius: 35px;
+
+}
+.private-btn:hover{
+    background: var(--secondary);
+    color: black;
+    transition: 0.3s;
+}
+
+
+/*==============================*
+        PRIVATE IMAGE
+*==============================*/
+
+.private-tasting-image {
+
+    position: relative;
+
+}
+
+.private-tasting-image img {
+
+    width: 100%;
+
+    height: 560px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.private-image-label {
+
+    position: absolute;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    padding: 15px 22px;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+}
+
+.private-image-label span {
+
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: var(--secondary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+.private-image-label strong {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+}
+/*==============================*
+        WHAT'S INCLUDED
+*==============================*/
+
+.included-section {
+
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--white);
+
+}
+
+.included-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+/*==============================*
+        INCLUDED HEADING
+*==============================*/
+
+.included-heading {
+
+    max-width: 650px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+
+}
+
+.included-heading h2 {
+
+    margin: 10px 0 20px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+}
+
+.included-heading p {
+
+    max-width: 550px;
+
+    margin: 0 auto;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/*==============================*
+        INCLUDED GRID
+*==============================*/
+
+.included-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+
+    border-left: 1px solid var(--border);
+
+}
+
+.included-item {
+
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 35px;
+
+    border-right: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.included-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 25px;
+
+    color: var(--secondary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+}
+
+
+/*==============================*
+        INCLUDED ICON
+*==============================*/
+
+.included-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid var(--secondary);
+
+    border-radius: 50%;
+
+    color: var(--primary);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+}
+
+.included-item h3 {
+
+    margin-bottom: 12px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+}
+
+.included-item p {
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+/*==============================*
+        VINORA WINE CLUB
+*==============================*/
+
+.wine-club-section {
+
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--light)
+
+}
+
+.wine-club-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+/*==============================*
+        CLUB HEADING
+*==============================*/
+
+.wine-club-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+
+}
+
+.wine-club-heading .section-subtitle {
+
+    color: var(--secondary);
+
+}
+
+.wine-club-heading h2 {
+
+    margin: 10px 0 20px;
+
+    color: black;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+}
+
+.wine-club-heading p {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: black;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/*==============================*
+        CLUB GRID
+*==============================*/
+
+.wine-club-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: stretch;
+
+    gap: 20px;
+
+}
+
+.club-card {
+
+    position: relative;
+
+    padding: 40px 35px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 30px;
+
+}
+
+.club-featured {
+
+    background: var(--light);
+
+    border: 2px solid var(--secondary);
+
+}
+
+
+/*==============================*
+        CLUB BADGE
+*==============================*/
+
+.club-badge {
+
+    position: absolute;
+
+    top: 0;
+
+    right: 25px;
+
+    padding: 8px 15px;
+
+    background: var(--secondary);
+
+    color: var(--dark);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+/*==============================*
+        CLUB CONTENT
+*==============================*/
+
+.club-label {
+
+    color: var(--secondary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+.club-card h3 {
+
+    margin: 10px 0 15px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+}
+
+.club-price {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 5px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.club-price strong {
+
+    color: var(--primary);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 52px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+}
+
+.club-price span {
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+}
+
+.club-description {
+
+    min-height: 70px;
+
+    padding: 20px 0;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/*==============================*
+        CLUB FEATURES
+*==============================*/
+
+.club-card ul {
+
+    min-height: 175px;
+
+    padding: 0;
+
+    margin: 0 0 30px;
+
+    list-style: none;
+
+}
+
+.club-card li {
+
+    position: relative;
+
+    padding: 7px 0 7px 20px;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+}
+
+.club-card li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: var(--secondary);
+
+    font-weight: 600;
+
+}
+
+
+/*==============================*
+        CLUB BUTTON
+*==============================*/
+
+.club-btn {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: 1px solid var(--primary);
+
+    color: var(--primary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+    border-radius: 35px;
+
+}
+.club-btn:hover{
+     border: 1px solid var(--secondary);
+
+    color: var(--secondary);
+    transition: 0.3s;
+
+}
+
+.club-featured .club-btn {
+
+    background: var(--primary);
+
+    color: var(--white);
+
+}
+.club-featured .club-btn:hover{
+    background: var(--secondary);
+    color: black;
+    transition: 0.3s;
+}
+/*==============================*
+        PRICING FAQ
+*==============================*/
+
+.pricing-faq {
+
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--light);
+
+}
+
+.faq-container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+/*==============================*
+        FAQ HEADING
+*==============================*/
+
+.faq-heading {
+
+    max-width: 600px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+
+}
+
+.faq-heading h2 {
+
+    margin: 10px 0 20px;
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+}
+
+.faq-heading p {
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/*==============================*
+        FAQ LIST
+*==============================*/
+
+.faq-list {
+
+    width: 100%;
+
+    border-top: 1px solid var(--border);
+
+}
+
+.faq-item {
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+/*==============================*
+        FAQ QUESTION
+*==============================*/
+
+.faq-question {
+
+    min-height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    cursor: pointer;
+
+}
+
+.faq-question span {
+
+    color: var(--dark);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+}
+
+.faq-question strong {
+
+    flex-shrink: 0;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--secondary);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+}
+
+
+/*==============================*
+        FAQ ANSWER
+*==============================*/
+
+.faq-answer {
+
+    display: none;
+
+    padding: 0 50px 25px 0;
+
+}
+
+.faq-answer p {
+
+    max-width: 700px;
+
+    margin: 0;
+
+    color: var(--text);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/*==============================*
+        ACTIVE FAQ
+*==============================*/
+
+.faq-item.active .faq-answer {
+
+    display: block;
+
+}
+
+.faq-item.active .faq-question strong {
+
+    color: var(--primary);
+
+}
+/*==============================*
+        PRICING CTA
+*==============================*/
+
+.pricing-cta {
+
+    width: 100%;
+
+    padding: 70px 8%;
+
+    background: var(--light);
+    
+
+}
+
+
+/*==============================*
+        CTA BOX
+*==============================*/
+
+.pricing-cta-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    min-height: 320px;
+
+    margin: 0 auto;
+
+    padding: 60px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-image: url('images/hero\ 2.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+    border-radius: 35px;
+
+}
+
+
+/*==============================*
+        CTA OVERLAY
+*==============================*/
+
+.pricing-cta-content::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(26, 26, 26, 0.72);
+
+    z-index: -1;
+
+}
+
+
+/*==============================*
+        CTA SUBTITLE
+*==============================*/
+
+.pricing-cta-content .section-subtitle {
+
+    position: relative;
+
+    color: var(--secondary);
+
+}
+
+.section-subtitle{
+    color: var(--secondary);
+}
+/*==============================*
+        CTA HEADING
+*==============================*/
+
+.pricing-cta-content h2 {
+
+    position: relative;
+
+    margin: 10px 0 15px;
+
+    color: var(--white);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(38px, 5vw, 60px);
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+}
+
+
+/*==============================*
+        CTA TEXT
+*==============================*/
+
+.pricing-cta-content p {
+
+    position: relative;
+
+    max-width: 550px;
+
+    margin: 0 auto 25px;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/*==============================*
+        CTA BUTTONS
+*==============================*/
+
+.pricing-cta-buttons {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+}
+
+
+/*==============================*
+        CTA BUTTON
+*==============================*/
+
+.pricing-cta-primary,
+.pricing-cta-secondary {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+
+}
+
+
+/*==============================*
+        PRIMARY BUTTON
+*==============================*/
+
+.pricing-cta-primary {
+
+    background: var(--primary);
+
+    color: var(--light);
+    border-radius: 35px;
+
+
+}
+.pricing-cta-primary:hover{
+    background: var(--secondary);
+    color: #000;
+    transition: 0.3s;
+}
+
+
+/*==============================*
+        SECONDARY BUTTON
+*==============================*/
+
+.pricing-cta-secondary {
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    color: var(--white);
+border-radius: 35px;
+}
+.pricing-cta-secondary:hover{
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+/*==============================================================*
+                    COMPLETE DARK MODE
+                PRICING PAGE - ALL SECTIONS
+*==============================================================*/
+
+/*==============================================================*
+                        DARK MODE VARIABLES
+*==============================================================*/
+
+body.dark-mode {
+
+    --primary: #9f3155;
+
+    --secondary: #d4af37;
+
+    --dark: #ffffff;
+
+    --white: #ffffff;
+
+    --light: #171717;
+
+    --border: rgba(255, 255, 255, 0.10);
+
+    --text: #c7c7c7;
+
+    background: #171717;
+
+    color: #ffffff;
+
+}
+
+
+/*==============================================================*
+                    GLOBAL DARK MODE
+*==============================================================*/
+
+body.dark-mode,
+body.dark-mode html {
+
+    background: #171717;
+
+    color: #ffffff;
+
+}
+
+body.dark-mode section {
+
+    background-color: #171717;
+
+}
+
+body.dark-mode a {
+
+    color: inherit;
+
+}
+
+body.dark-mode p {
+
+    color: #c7c7c7;
+
+}
+
+
+/*==============================================================*
+                        PRICING HERO
+*==============================================================*/
+
+body.dark-mode .pricing-hero {
+
+    background-color: #171717;
+
+}
+
+body.dark-mode .pricing-hero-overlay {
+
+    background: rgba(0, 0, 0, 0.72);
+
+}
+
+body.dark-mode .pricing-hero-content {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pricing-hero-subtitle {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .pricing-hero-content h1 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pricing-hero-content p {
+
+    color: rgba(255, 255, 255, 0.78);
+
+}
+
+body.dark-mode .pricing-hero-btn {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                    TASTING EXPERIENCES
+*==============================================================*/
+
+body.dark-mode .tasting-experiences {
+
+    background: #171717;
+
+}
+
+body.dark-mode .pricing-container {
+
+    background: transparent;
+
+}
+
+body.dark-mode .pricing-heading h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pricing-heading p {
+
+    color: #c7c7c7;
+
+}
+
+
+/*==============================================================*
+                        PRICING GRID
+*==============================================================*/
+
+body.dark-mode .pricing-grid {
+
+    background: transparent;
+
+}
+
+body.dark-mode .pricing-card {
+
+    background: #222222;
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .pricing-card.featured {
+
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+}
+
+body.dark-mode .featured-badge {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+body.dark-mode .pricing-label {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .pricing-card h3 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pricing-card.featured h3 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pricing-description {
+
+    color: #c7c7c7;
+
+}
+
+body.dark-mode .pricing-card.featured .pricing-description {
+
+    color: rgba(255, 255, 255, 0.78);
+
+}
+
+
+/*==============================================================*
+                            PRICE
+*==============================================================*/
+
+body.dark-mode .price {
+
+    color: #d4af37;
+
+}
+
+body.dark-mode .price span {
+
+    color: #d4af37;
+
+}
+
+body.dark-mode .price small {
+
+    color: #a9a9a9;
+
+}
+
+body.dark-mode .pricing-card.featured .price {
+
+    color: #f0c94a;
+
+}
+
+body.dark-mode .pricing-card.featured .price small {
+
+    color: rgba(255, 255, 255, 0.68);
+
+}
+
+
+/*==============================================================*
+                        PRICING DIVIDER
+*==============================================================*/
+
+body.dark-mode .pricing-divider {
+
+    background: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .pricing-card.featured .pricing-divider {
+
+    background: rgba(255, 255, 255, 0.22);
+
+}
+
+
+/*==============================================================*
+                    PRICING FEATURES
+*==============================================================*/
+
+body.dark-mode .pricing-features li {
+
+    color: #c7c7c7;
+
+}
+
+body.dark-mode .pricing-features li::before {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .pricing-card.featured .pricing-features li {
+
+    color: rgba(255, 255, 255, 0.82);
+
+}
+
+
+/*==============================================================*
+                    PRICING BUTTON
+*==============================================================*/
+
+body.dark-mode .pricing-btn {
+
+    background: transparent;
+
+    border-color: var(--secondary);
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .pricing-btn:hover {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+body.dark-mode .pricing-card.featured .pricing-btn {
+
+    background: var(--secondary);
+
+    border-color: var(--secondary);
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                    WINE & CHEESE
+*==============================================================*/
+
+body.dark-mode .pairing-section {
+
+    background: #171717;
+
+}
+
+body.dark-mode .pairing-container {
+
+    background: transparent;
+
+}
+
+body.dark-mode .pairing-content h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pairing-content > p {
+
+    color: #c7c7c7;
+
+}
+
+
+/*==============================================================*
+                        PAIRING IMAGE
+*==============================================================*/
+
+body.dark-mode .pairing-image {
+
+    background: #222222;
+
+}
+
+body.dark-mode .pairing-price {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+body.dark-mode .pairing-price span {
+
+    color: #171717;
+
+}
+
+body.dark-mode .pairing-price strong {
+
+    color: #171717;
+
+}
+
+body.dark-mode .pairing-price small {
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                        PAIRING LIST
+*==============================================================*/
+
+body.dark-mode .pairing-list {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .pairing-item {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .pairing-item > span {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .pairing-item h3 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pairing-item p {
+
+    color: #bdbdbd;
+
+}
+
+
+/*==============================================================*
+                        PAIRING BUTTON
+*==============================================================*/
+
+body.dark-mode .pairing-btn {
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pairing-btn:hover {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                    PRIVATE TASTING
+*==============================================================*/
+
+body.dark-mode .private-tasting {
+
+    background: #171717;
+
+}
+
+body.dark-mode .private-tasting-container {
+
+    background: transparent;
+
+}
+
+body.dark-mode .private-tasting-content h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .private-tasting-content > p {
+
+    color: #c7c7c7;
+
+}
+
+
+/*==============================================================*
+                    PRIVATE DETAILS
+*==============================================================*/
+
+body.dark-mode .private-details {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .private-detail {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .private-detail strong {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .private-detail span {
+
+    color: #bdbdbd;
+
+}
+
+
+/*==============================================================*
+                    PRIVATE BUTTON
+*==============================================================*/
+
+body.dark-mode .private-btn {
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .private-btn:hover {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                    PRIVATE IMAGE
+*==============================================================*/
+
+body.dark-mode .private-tasting-image {
+
+    background: #222222;
+
+}
+
+body.dark-mode .private-image-label {
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .private-image-label span {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .private-image-label strong {
+
+    color: #ffffff;
+
+}
+
+
+/*==============================================================*
+                    WHAT'S INCLUDED
+*==============================================================*/
+
+body.dark-mode .included-section {
+
+    background: #171717;
+
+}
+
+body.dark-mode .included-heading h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .included-heading p {
+
+    color: #c7c7c7;
+
+}
+
+
+/*==============================================================*
+                    INCLUDED GRID
+*==============================================================*/
+
+body.dark-mode .included-grid {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .included-item {
+
+    background: #171717;
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .included-number {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .included-icon {
+
+    border-color: var(--secondary);
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .included-item h3 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .included-item p {
+
+    color: #bdbdbd;
+
+}
+
+
+/*==============================================================*
+                    WINE CLUB
+*==============================================================*/
+
+body.dark-mode .wine-club-section {
+
+    background: #171717;
+
+}
+
+body.dark-mode .wine-club-container {
+
+    background: transparent;
+
+}
+
+body.dark-mode .wine-club-heading h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .wine-club-heading p {
+
+    color: rgba(255, 255, 255, 0.72);
+
+}
+
+body.dark-mode .wine-club-heading .section-subtitle {
+
+    color: var(--secondary);
+
+}
+
+
+/*==============================================================*
+                        CLUB GRID
+*==============================================================*/
+
+body.dark-mode .club-card {
+
+    background: #222222;
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .club-featured {
+
+    background: #242424;
+
+    border-color: var(--secondary);
+
+}
+
+body.dark-mode .club-badge {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                        CLUB CONTENT
+*==============================================================*/
+
+body.dark-mode .club-label {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .club-card h3 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .club-price {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .club-price strong {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .club-price span {
+
+    color: #a9a9a9;
+
+}
+
+body.dark-mode .club-description {
+
+    color: #c7c7c7;
+
+}
+
+
+/*==============================================================*
+                    CLUB FEATURES
+*==============================================================*/
+
+body.dark-mode .club-card li {
+
+    color: #c7c7c7;
+
+}
+
+body.dark-mode .club-card li::before {
+
+    color: var(--secondary);
+
+}
+
+
+/*==============================================================*
+                    CLUB BUTTON
+*==============================================================*/
+
+body.dark-mode .club-btn {
+
+    background: transparent;
+
+    border-color: var(--secondary);
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .club-btn:hover {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+body.dark-mode .club-featured .club-btn {
+
+    background: var(--primary);
+
+    border-color: var(--primary);
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .club-featured .club-btn:hover {
+
+    background: var(--secondary);
+
+    border-color: var(--secondary);
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                        PRICING FAQ
+*==============================================================*/
+
+body.dark-mode .pricing-faq {
+
+    background: #171717;
+
+}
+
+body.dark-mode .faq-heading h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .faq-heading p {
+
+    color: #c7c7c7;
+
+}
+
+
+/*==============================================================*
+                        FAQ LIST
+*==============================================================*/
+
+body.dark-mode .faq-list {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .faq-item {
+
+    border-color: rgba(255, 255, 255, 0.10);
+
+}
+
+body.dark-mode .faq-question span {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .faq-question strong {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .faq-answer p {
+
+    color: #bdbdbd;
+
+}
+
+body.dark-mode .faq-item.active .faq-question strong {
+
+    color: var(--secondary);
+
+}
+
+
+/*==============================================================*
+                        PRICING CTA
+*==============================================================*/
+
+body.dark-mode .pricing-cta {
+
+    background: #171717;
+
+}
+
+body.dark-mode .pricing-cta-content {
+
+    background-color: #222222;
+
+}
+
+body.dark-mode .pricing-cta-content::before {
+
+    background: rgba(0, 0, 0, 0.78);
+
+}
+
+body.dark-mode .pricing-cta-content .section-subtitle {
+
+    color: var(--secondary);
+
+}
+
+body.dark-mode .pricing-cta-content h2 {
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pricing-cta-content p {
+
+    color: rgba(255, 255, 255, 0.78);
+
+}
+
+
+/*==============================================================*
+                    CTA BUTTONS
+*==============================================================*/
+
+body.dark-mode .pricing-cta-primary {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+body.dark-mode .pricing-cta-primary:hover {
+
+    background: #ffffff;
+
+    color: #171717;
+
+}
+
+body.dark-mode .pricing-cta-secondary {
+
+    border-color: rgba(255, 255, 255, 0.65);
+
+    color: #ffffff;
+
+}
+
+body.dark-mode .pricing-cta-secondary:hover {
+
+    background: #ffffff;
+
+    border-color: #ffffff;
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                    SECTION SUBTITLE
+*==============================================================*/
+
+body.dark-mode .section-subtitle {
+
+    color: var(--secondary);
+
+}
+
+
+/*==============================================================*
+                    IMAGE DARK OVERLAY
+*==============================================================*/
+
+body.dark-mode .pricing-hero::after {
+
+    pointer-events: none;
+
+}
+
+
+/*==============================================================*
+                    DARK MODE HOVER EFFECTS
+*==============================================================*/
+
+body.dark-mode .pricing-card:hover {
+
+    border-color: rgba(212, 175, 55, 0.45);
+
+}
+
+body.dark-mode .club-card:hover {
+
+    border-color: rgba(212, 175, 55, 0.45);
+
+}
+
+body.dark-mode .included-item:hover {
+
+    background: #1d1d1d;
+
+}
+
+
+/*==============================================================*
+                    DARK MODE SELECTION
+*==============================================================*/
+
+body.dark-mode ::selection {
+
+    background: var(--secondary);
+
+    color: #171717;
+
+}
+
+
+/*==============================================================*
+                    DARK MODE SCROLLBAR
+*==============================================================*/
+
+body.dark-mode::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+
+    background: #111111;
+
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+
+    background: #444444;
+
+    border-radius: 10px;
+
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+
+    background: var(--secondary);
+
+}
+
+
+/*==============================================================*
+                    IMPORTANT GLOBAL OVERRIDE
+              KEEP EVERY SECTION SAME BACKGROUND
+*==============================================================*/
+
+body.dark-mode .tasting-experiences,
+body.dark-mode .pairing-section,
+body.dark-mode .private-tasting,
+body.dark-mode .included-section,
+body.dark-mode .wine-club-section,
+body.dark-mode .pricing-faq,
+body.dark-mode .pricing-cta {
+
+    background-color: #171717;
+
+}
+
+
+/*==============================================================*
+                    RESPONSIVE MEDIA QUERIES
+*==============================================================*/
+
+
+/*==============================================================*
+                    SAMSUNG GALAXY S8+
+                    360px - 740px
+*==============================================================*/
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+    /*==========================================================*
+                            GENERAL
+    *==========================================================*/
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+
+    /*==========================================================*
+                            PRICING HERO
+    *==========================================================*/
+
+    .pricing-hero {
+        min-height: 100svh;
+        padding: 80px 20px 50px;
+        background-position: center center;
+    }
+
+    .pricing-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pricing-hero-subtitle {
+        margin-bottom: 15px;
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .pricing-hero-content h1 {
+        margin-bottom: 18px;
+        font-size: clamp(45px, 14vw, 60px);
+        line-height: 0.95;
+    }
+
+    .pricing-hero-content p {
+        max-width: 100%;
+        margin-bottom: 25px;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .pricing-hero-btn {
+        padding: 12px 24px;
+        font-size: 10px;
+    }
+
+
+    /*==========================================================*
+                        TASTING EXPERIENCES
+    *==========================================================*/
+
+    .tasting-experiences {
+        padding: 65px 20px;
+    }
+
+    .pricing-container {
+        width: 100%;
+    }
+
+    .pricing-heading {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .pricing-heading h2 {
+        margin: 8px 0 15px;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .pricing-heading p {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /*==========================================================*
+                        PRICING GRID
+    *==========================================================*/
+
+    .pricing-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        padding: 30px 24px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+    .featured-badge {
+        right: 18px;
+        padding: 7px 12px;
+        font-size: 8px;
+    }
+
+    .pricing-label {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .pricing-card h3 {
+        margin: 10px 0 12px;
+        font-size: 32px;
+    }
+
+    .pricing-description {
+        min-height: auto;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .price {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+    .price span {
+        font-size: 24px;
+    }
+
+    .price small {
+        font-size: 10px;
+    }
+
+    .pricing-divider {
+        margin: 22px 0;
+    }
+
+    .pricing-features {
+        min-height: auto;
+        margin-bottom: 25px;
+    }
+
+    .pricing-features li {
+        padding: 6px 0 6px 20px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .pricing-btn {
+        padding: 13px 18px;
+        font-size: 10px;
+    }
+
+
+    /*==========================================================*
+                        WINE & CHEESE
+    *==========================================================*/
+
+    .pairing-section {
+        padding: 65px 20px;
+    }
+
+    .pairing-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .pairing-image {
+        width: 100%;
+    }
+
+    .pairing-image img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .pairing-price {
+        right: 15px;
+        bottom: 15px;
+        width: 95px;
+        height: 95px;
+    }
+
+    .pairing-price span {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .pairing-price strong {
+        font-size: 30px;
+    }
+
+    .pairing-price small {
+        font-size: 8px;
+    }
+
+    .pairing-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pairing-content h2 {
+        margin: 8px 0 18px;
+        font-size: 45px;
+        line-height: 0.98;
+    }
+
+    .pairing-content > p {
+        margin-bottom: 25px;
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .pairing-item {
+        gap: 12px;
+        padding: 15px 0;
+    }
+
+    .pairing-item > span {
+        min-width: 20px;
+        font-size: 10px;
+    }
+
+    .pairing-item h3 {
+        margin-bottom: 3px;
+        font-size: 21px;
+    }
+
+    .pairing-item p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .pairing-btn {
+        margin-top: 25px;
+        padding: 13px 24px;
+        font-size: 10px;
+    }
+
+
+    /*==========================================================*
+                        PRIVATE TASTING
+    *==========================================================*/
+
+    .private-tasting {
+        padding: 65px 20px;
+    }
+
+    .private-tasting-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .private-tasting-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .private-tasting-content h2 {
+        margin: 8px 0 18px;
+        font-size: 45px;
+        line-height: 0.98;
+    }
+
+    .private-tasting-content > p {
+        margin-bottom: 25px;
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .private-details {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 25px;
+    }
+
+    .private-detail {
+        padding: 15px 8px;
+    }
+
+    .private-detail strong {
+        font-size: 26px;
+    }
+
+    .private-detail span {
+        font-size: 8px;
+        letter-spacing: 0.7px;
+    }
+
+    .private-btn {
+        padding: 13px 24px;
+        font-size: 10px;
+    }
+
+    .private-tasting-image {
+        width: 100%;
+    }
+
+    .private-tasting-image img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .private-image-label {
+        left: 15px;
+        bottom: 15px;
+        padding: 12px 16px;
+    }
+
+    .private-image-label span {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .private-image-label strong {
+        font-size: 21px;
+    }
+
+
+    /*==========================================================*
+                        WHAT'S INCLUDED
+    *==========================================================*/
+
+    .included-section {
+        padding: 65px 20px;
+    }
+
+    .included-container {
+        width: 100%;
+    }
+
+    .included-heading {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .included-heading h2 {
+        margin: 8px 0 15px;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .included-heading p {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .included-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .included-item {
+        min-height: auto;
+        padding: 28px 24px;
+    }
+
+    .included-number {
+        top: 20px;
+        right: 20px;
+        font-size: 9px;
+    }
+
+    .included-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .included-item h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .included-item p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /*==========================================================*
+                        WINE CLUB
+    *==========================================================*/
+
+    .wine-club-section {
+        padding: 65px 20px;
+    }
+
+    .wine-club-container {
+        width: 100%;
+    }
+
+    .wine-club-heading {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .wine-club-heading h2 {
+        margin: 8px 0 15px;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .wine-club-heading p {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .wine-club-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .club-card {
+        width: 100%;
+        padding: 30px 24px;
+    }
+
+    .club-badge {
+        right: 18px;
+        padding: 7px 12px;
+        font-size: 8px;
+    }
+
+    .club-card h3 {
+        margin: 10px 0 12px;
+        font-size: 34px;
+    }
+
+    .club-price {
+        padding-bottom: 18px;
+    }
+
+    .club-price strong {
+        font-size: 46px;
+    }
+
+    .club-price span {
+        font-size: 10px;
+    }
+
+    .club-description {
+        min-height: auto;
+        padding: 18px 0;
+        font-size: 12px;
+    }
+
+    .club-card ul {
+        min-height: auto;
+        margin-bottom: 25px;
+    }
+
+    .club-card li {
+        padding: 6px 0 6px 20px;
+        font-size: 12px;
+    }
+
+    .club-btn {
+        padding: 13px 18px;
+        font-size: 10px;
+    }
+
+
+    /*==========================================================*
+                            FAQ
+    *==========================================================*/
+
+    .pricing-faq {
+        padding: 65px 20px;
+    }
+
+    .faq-container {
+        width: 100%;
+    }
+
+    .faq-heading {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .faq-heading h2 {
+        margin: 8px 0 15px;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .faq-heading p {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .faq-question {
+        min-height: 65px;
+        gap: 15px;
+    }
+
+    .faq-question span {
+        font-size: 19px;
+        line-height: 1.3;
+    }
+
+    .faq-question strong {
+        width: 28px;
+        height: 28px;
+        font-size: 21px;
+    }
+
+    .faq-answer {
+        padding: 0 35px 20px 0;
+    }
+
+    .faq-answer p {
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /*==========================================================*
+                            PRICING CTA
+    *==========================================================*/
+
+    .pricing-cta {
+        padding: 45px 20px;
+    }
+
+    .pricing-cta-content {
+        width: 100%;
+        max-width: 100%;
+        min-height: 280px;
+        padding: 40px 20px;
+    }
+
+    .pricing-cta-content h2 {
+        margin: 8px 0 12px;
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .pricing-cta-content p {
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .pricing-cta-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pricing-cta-primary,
+    .pricing-cta-secondary {
+        width: 100%;
+        max-width: 210px;
+        padding: 12px 20px;
+        font-size: 9px;
+        text-align: center;
+    }
+
+}
+
+
+/*==============================================================*
+                    iPAD MINI
+                    768px - 820px
+*==============================================================*/
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /*==========================================================*
+                            GENERAL
+    *==========================================================*/
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /*==========================================================*
+                            PRICING HERO
+    *==========================================================*/
+
+    .pricing-hero {
+        min-height: 75vh;
+        padding: 90px 40px 60px;
+    }
+
+    .pricing-hero-content {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .pricing-hero-subtitle {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+    .pricing-hero-content h1 {
+        font-size: clamp(65px, 10vw, 82px);
+    }
+
+    .pricing-hero-content p {
+        max-width: 600px;
+        font-size: 14px;
+    }
+
+
+    /*==========================================================*
+                        TASTING EXPERIENCES
+    *==========================================================*/
+
+    .tasting-experiences,
+    .pairing-section,
+    .private-tasting,
+    .included-section,
+    .wine-club-section,
+    .pricing-faq {
+        padding: 80px 40px;
+    }
+
+    .pricing-heading,
+    .included-heading,
+    .faq-heading,
+    .wine-club-heading {
+        margin-bottom: 50px;
+    }
+
+    .pricing-heading h2,
+    .included-heading h2,
+    .faq-heading h2,
+    .wine-club-heading h2 {
+        font-size: 52px;
+    }
+
+
+    /*==========================================================*
+                        PRICING GRID
+    *==========================================================*/
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pricing-card {
+        padding: 32px 25px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+        grid-column: 1 / -1;
+        max-width: 50%;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .pricing-card h3 {
+        font-size: 32px;
+    }
+
+    .pricing-description {
+        min-height: 75px;
+    }
+
+    .price {
+        font-size: 52px;
+    }
+
+    .pricing-features {
+        min-height: 175px;
+    }
+
+
+    /*==========================================================*
+                        WINE & CHEESE
+    *==========================================================*/
+
+    .pairing-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .pairing-image img {
+        height: 480px;
+    }
+
+    .pairing-price {
+        width: 100px;
+        height: 100px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .pairing-content h2 {
+        font-size: 48px;
+    }
+
+    .pairing-content > p {
+        font-size: 13px;
+    }
+
+    .pairing-item {
+        gap: 12px;
+        padding: 15px 0;
+    }
+
+    .pairing-item h3 {
+        font-size: 21px;
+    }
+
+    .pairing-item p {
+        font-size: 12px;
+    }
+
+
+    /*==========================================================*
+                        PRIVATE TASTING
+    *==========================================================*/
+
+    .private-tasting-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .private-tasting-content h2 {
+        font-size: 48px;
+    }
+
+    .private-tasting-content > p {
+        font-size: 13px;
+    }
+
+    .private-details {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .private-detail {
+        padding: 16px 8px;
+    }
+
+    .private-detail strong {
+        font-size: 27px;
+    }
+
+    .private-detail span {
+        font-size: 8px;
+    }
+
+    .private-tasting-image img {
+        height: 480px;
+    }
+
+
+    /*==========================================================*
+                        WHAT'S INCLUDED
+    *==========================================================*/
+
+    .included-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .included-item {
+        min-height: 270px;
+        padding: 30px 25px;
+    }
+
+    .included-icon {
+        margin-bottom: 22px;
+    }
+
+    .included-item h3 {
+        font-size: 26px;
+    }
+
+
+    /*==========================================================*
+                        WINE CLUB
+    *==========================================================*/
+
+    .wine-club-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .club-card {
+        padding: 32px 25px;
+    }
+
+    .club-card h3 {
+        font-size: 34px;
+    }
+
+    .club-price strong {
+        font-size: 46px;
+    }
+
+    .club-description {
+        min-height: 70px;
+    }
+
+    .club-card ul {
+        min-height: 165px;
+    }
+
+    .club-featured {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        width: 100%;
+        justify-self: center;
+    }
+
+
+    /*==========================================================*
+                            FAQ
+    *==========================================================*/
+
+    .faq-question {
+        min-height: 72px;
+    }
+
+    .faq-question span {
+        font-size: 21px;
+    }
+
+    .faq-answer {
+        padding-right: 45px;
+    }
+
+
+    /*==========================================================*
+                            CTA
+    *==========================================================*/
+
+    .pricing-cta {
+        padding: 55px 40px;
+    }
+
+    .pricing-cta-content {
+        max-width: 700px;
+        min-height: 300px;
+        padding: 50px 35px;
+    }
+
+    .pricing-cta-content h2 {
+        font-size: 50px;
+    }
+
+    .pricing-cta-content p {
+        max-width: 520px;
+    }
+
+}
+
+
+/*==============================================================*
+                    iPAD PRO 11"
+                    821px - 1024px
+*==============================================================*/
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    /*==========================================================*
+                            GENERAL
+    *==========================================================*/
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /*==========================================================*
+                            PRICING HERO
+    *==========================================================*/
+
+    .pricing-hero {
+        min-height: 78vh;
+        padding: 100px 55px 70px;
+    }
+
+    .pricing-hero-content {
+        max-width: 800px;
+    }
+
+    .pricing-hero-content h1 {
+        font-size: clamp(72px, 9vw, 92px);
+    }
+
+    .pricing-hero-content p {
+        max-width: 620px;
+        font-size: 15px;
+    }
+
+
+    /*==========================================================*
+                        MAIN SECTIONS
+    *==========================================================*/
+
+    .tasting-experiences,
+    .pairing-section,
+    .private-tasting,
+    .included-section,
+    .wine-club-section,
+    .pricing-faq {
+        padding: 90px 55px;
+    }
+
+
+    /*==========================================================*
+                        PRICING
+    *==========================================================*/
+
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .pricing-card {
+        padding: 32px 24px;
+    }
+
+    .pricing-card.featured {
+        transform: translateY(-10px);
+    }
+
+    .pricing-card h3 {
+        font-size: 31px;
+    }
+
+    .pricing-description {
+        min-height: 85px;
+    }
+
+    .price {
+        font-size: 50px;
+    }
+
+    .pricing-features {
+        min-height: 190px;
+    }
+
+    .pricing-features li {
+        font-size: 12px;
+    }
+
+
+    /*==========================================================*
+                        WINE & CHEESE
+    *==========================================================*/
+
+    .pairing-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+    }
+
+    .pairing-image img {
+        height: 500px;
+    }
+
+    .pairing-price {
+        width: 105px;
+        height: 105px;
+    }
+
+    .pairing-content h2 {
+        font-size: 54px;
+    }
+
+    .pairing-content > p {
+        font-size: 14px;
+    }
+
+
+    /*==========================================================*
+                        PRIVATE TASTING
+    *==========================================================*/
+
+    .private-tasting-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+    }
+
+    .private-tasting-content h2 {
+        font-size: 54px;
+    }
+
+    .private-tasting-content > p {
+        font-size: 14px;
+    }
+
+    .private-details {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .private-detail {
+        padding: 18px 10px;
+    }
+
+    .private-detail strong {
+        font-size: 29px;
+    }
+
+    .private-detail span {
+        font-size: 8px;
+    }
+
+    .private-tasting-image img {
+        height: 500px;
+    }
+
+
+    /*==========================================================*
+                        WHAT'S INCLUDED
+    *==========================================================*/
+
+    .included-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .included-item {
+        min-height: 280px;
+        padding: 30px 25px;
+    }
+
+    .included-item h3 {
+        font-size: 26px;
+    }
+
+
+    /*==========================================================*
+                        WINE CLUB
+    *==========================================================*/
+
+    .wine-club-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .club-card {
+        padding: 32px 24px;
+    }
+
+    .club-card h3 {
+        font-size: 34px;
+    }
+
+    .club-price strong {
+        font-size: 46px;
+    }
+
+    .club-description {
+        min-height: 75px;
+    }
+
+    .club-card ul {
+        min-height: 180px;
+    }
+
+
+    /*==========================================================*
+                            FAQ
+    *==========================================================*/
+
+    .faq-container {
+        max-width: 900px;
+    }
+
+    .faq-question {
+        min-height: 75px;
+    }
+
+    .faq-question span {
+        font-size: 22px;
+    }
+
+    .faq-answer {
+        padding-right: 50px;
+    }
+
+
+    /*==========================================================*
+                            CTA
+    *==========================================================*/
+
+    .pricing-cta {
+        padding: 60px 55px;
+    }
+
+    .pricing-cta-content {
+        max-width: 900px;
+        min-height: 300px;
+        padding: 50px 40px;
+    }
+
+    .pricing-cta-content h2 {
+        font-size: 55px;
+    }
+
+}
+
+
+/*==============================================================*
+                        NEST HUB
+                    1024px × 600px
+*==============================================================*/
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+    /*==========================================================*
+                            GENERAL
+    *==========================================================*/
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /*==========================================================*
+                            HERO
+    *==========================================================*/
+
+    .pricing-hero {
+        min-height: 600px;
+        height: 600px;
+        padding: 70px 50px 45px;
+    }
+
+    .pricing-hero-content {
+        max-width: 750px;
+    }
+
+    .pricing-hero-subtitle {
+        margin-bottom: 10px;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .pricing-hero-content h1 {
+        margin-bottom: 15px;
+        font-size: 68px;
+    }
+
+    .pricing-hero-content p {
+        max-width: 570px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .pricing-hero-btn {
+        padding: 11px 25px;
+        font-size: 10px;
+    }
+
+
+    /*==========================================================*
+                        SECTION SPACING
+    *==========================================================*/
+
+    .tasting-experiences,
+    .pairing-section,
+    .private-tasting,
+    .included-section,
+    .wine-club-section,
+    .pricing-faq {
+        padding: 65px 55px;
+    }
+
+
+    /*==========================================================*
+                        PRICING
+    *==========================================================*/
+
+    .pricing-heading,
+    .included-heading,
+    .faq-heading,
+    .wine-club-heading {
+        margin-bottom: 40px;
+    }
+
+    .pricing-heading h2,
+    .included-heading h2,
+    .faq-heading h2,
+    .wine-club-heading h2 {
+        font-size: 48px;
+    }
+
+    .pricing-heading p,
+    .included-heading p,
+    .faq-heading p,
+    .wine-club-heading p {
+        font-size: 12px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .pricing-card {
+        padding: 25px 20px;
+    }
+
+    .pricing-card.featured {
+        transform: translateY(-8px);
+    }
+
+    .pricing-card h3 {
+        font-size: 29px;
+    }
+
+    .pricing-description {
+        min-height: 65px;
+        font-size: 11px;
+    }
+
+    .price {
+        margin-top: 18px;
+        font-size: 46px;
+    }
+
+    .pricing-divider {
+        margin: 20px 0;
+    }
+
+    .pricing-features {
+        min-height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .pricing-features li {
+        padding: 5px 0 5px 18px;
+        font-size: 11px;
+    }
+
+    .pricing-btn {
+        padding: 11px 15px;
+        font-size: 9px;
+    }
+
+
+    /*==========================================================*
+                        WINE & CHEESE
+    *==========================================================*/
+
+    .pairing-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .pairing-image img {
+        height: 430px;
+    }
+
+    .pairing-price {
+        width: 90px;
+        height: 90px;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .pairing-price strong {
+        font-size: 30px;
+    }
+
+    .pairing-content h2 {
+        font-size: 50px;
+    }
+
+    .pairing-content > p {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .pairing-item {
+        padding: 12px 0;
+    }
+
+    .pairing-item h3 {
+        font-size: 20px;
+    }
+
+    .pairing-item p {
+        font-size: 11px;
+    }
+
+    .pairing-btn {
+        margin-top: 20px;
+        padding: 11px 23px;
+        font-size: 9px;
+    }
+
+
+    /*==========================================================*
+                        PRIVATE TASTING
+    *==========================================================*/
+
+    .private-tasting-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .private-tasting-content h2 {
+        font-size: 50px;
+    }
+
+    .private-tasting-content > p {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .private-details {
+        margin-bottom: 20px;
+    }
+
+    .private-detail {
+        padding: 14px 8px;
+    }
+
+    .private-detail strong {
+        font-size: 27px;
+    }
+
+    .private-detail span {
+        font-size: 7px;
+    }
+
+    .private-tasting-image img {
+        height: 430px;
+    }
+
+    .private-image-label {
+        left: 15px;
+        bottom: 15px;
+        padding: 10px 15px;
+    }
+
+    .private-image-label strong {
+        font-size: 20px;
+    }
+
+
+    /*==========================================================*
+                        INCLUDED
+    *==========================================================*/
+
+    .included-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .included-item {
+        min-height: 250px;
+        padding: 25px 20px;
+    }
+
+    .included-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 18px;
+    }
+
+    .included-item h3 {
+        font-size: 24px;
+    }
+
+    .included-item p {
+        font-size: 11px;
+    }
+
+
+    /*==========================================================*
+                        WINE CLUB
+    *==========================================================*/
+
+    .wine-club-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .club-card {
+        padding: 25px 20px;
+    }
+
+    .club-card h3 {
+        font-size: 30px;
+    }
+
+    .club-price {
+        padding-bottom: 15px;
+    }
+
+    .club-price strong {
+        font-size: 42px;
+    }
+
+    .club-description {
+        min-height: 60px;
+        padding: 15px 0;
+        font-size: 11px;
+    }
+
+    .club-card ul {
+        min-height: 145px;
+        margin-bottom: 20px;
+    }
+
+    .club-card li {
+        padding: 5px 0 5px 18px;
+        font-size: 11px;
+    }
+
+    .club-btn {
+        padding: 11px 15px;
+        font-size: 9px;
+    }
+
+
+    /*==========================================================*
+                            FAQ
+    *==========================================================*/
+
+    .faq-question {
+        min-height: 65px;
+        gap: 20px;
+    }
+
+    .faq-question span {
+        font-size: 20px;
+    }
+
+    .faq-question strong {
+        width: 28px;
+        height: 28px;
+        font-size: 21px;
+    }
+
+    .faq-answer {
+        padding: 0 40px 18px 0;
+    }
+
+    .faq-answer p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+
+    /*==========================================================*
+                            CTA
+    *==========================================================*/
+
+    .pricing-cta {
+        padding: 45px 55px;
+    }
+
+    .pricing-cta-content {
+        max-width: 850px;
+        min-height: 240px;
+        padding: 35px 40px;
+    }
+
+    .pricing-cta-content h2 {
+        margin: 7px 0 10px;
+        font-size: 48px;
+    }
+
+    .pricing-cta-content p {
+        max-width: 500px;
+        margin-bottom: 18px;
+        font-size: 11px;
+    }
+
+    .pricing-cta-buttons {
+        gap: 10px;
+    }
+
+    .pricing-cta-primary,
+    .pricing-cta-secondary {
+        padding: 10px 22px;
+        font-size: 9px;
+    }
+
 }

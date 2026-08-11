@@ -1,102 +1,75 @@
-const faqItems = document.querySelectorAll(".faq-item");
 
-faqItems.forEach(item => {
 
-    const question = item.querySelector(".faq-question");
+document.addEventListener("DOMContentLoaded", () => {
 
-    question.addEventListener("click", () => {
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-        const isActive = item.classList.contains("active");
+    anchorLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            const targetId = link.getAttribute("href");
+            if (targetId === "#") return;
 
-        // Close all FAQ items
-        faqItems.forEach(faq => {
-            faq.classList.remove("active");
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const headerOffset = 92;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
         });
-
-        // Open the clicked item if it wasn't already open
-        if (!isActive) {
-            item.classList.add("active");
-        }
-
     });
 
-});
-/*=========================
-      DARK MODE
-=========================*/
+    const regionCards = document.querySelectorAll(".region-card");
 
-const themeBtn = document.getElementById("themeToggle");
+    regionCards.forEach(card => {
+        card.addEventListener("click", () => {
+            if (window.innerWidth <= 1024) {
+                regionCards.forEach(other => {
+                    if (other !== card) other.classList.remove("mobile-active");
+                });
+                card.classList.toggle("mobile-active");
+            }
+        });
+    });
 
-themeBtn.addEventListener("click", () => {
+    const animateElements = document.querySelectorAll(
+        ".region-card, .flight-card, .pairing-card, .exp-feature, .event-item-row, .vault-feature-card, .club-benefit"
+    );
 
-    document.body.classList.toggle("dark-mode");
+    if ("IntersectionObserver" in window) {
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
 
-    const icon = themeBtn.querySelector("i");
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-    if(document.body.classList.contains("dark-mode")){
-
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
-
-        localStorage.setItem("theme","dark");
-
-    }else{
-
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
-
-        localStorage.setItem("theme","light");
-
+        animateElements.forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(24px)";
+            el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+            observer.observe(el);
+        });
     }
 
-});
-
-/* Load Theme */
-
-if(localStorage.getItem("theme")==="dark"){
-
-    document.body.classList.add("dark-mode");
-
-    themeBtn.querySelector("i").classList.remove("fa-moon");
-    themeBtn.querySelector("i").classList.add("fa-sun");
-
-}
-
-/*=========================
-        RTL
-=========================*/
-
-const rtlBtn = document.getElementById("rtlToggle");
-
-rtlBtn.addEventListener("click",()=>{
-
-    document.body.classList.toggle("rtl");
-
-    if(document.body.classList.contains("rtl")){
-
-        document.documentElement.setAttribute("dir","rtl");
-
-        localStorage.setItem("direction","rtl");
-
-    }else{
-
-        document.documentElement.setAttribute("dir","ltr");
-
-        localStorage.setItem("direction","ltr");
-
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
     }
 
+    if (localStorage.getItem("direction") === "rtl") {
+        document.documentElement.setAttribute("dir", "rtl");
+    }
 });
-
-/* Load RTL */
-
-if(localStorage.getItem("direction")==="rtl"){
-
-    document.body.classList.add("rtl");
-
-    document.documentElement.setAttribute("dir","rtl");
-
-}
-
-
-
