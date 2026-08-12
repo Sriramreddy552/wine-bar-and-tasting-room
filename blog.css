@@ -2348,5 +2348,520 @@ blockquote {
     transition-duration: 0.01ms !important;
   }
 }
- 
+ /* =========================================================
+   DARK MODE
+   Add class="dark-mode" to <body>
+========================================================= */
+
+body.dark-mode {
+
+    /* Main Colors */
+    --cream: #0f0b0d;
+    --surface: #171214;
+    --surface-soft: #21191c;
+
+    /* Text */
+    --text: #f5eeee;
+    --muted: #b9adb1;
+
+    /* Wine Colors */
+    --primary: #a83d5d;
+    --primary-dark: #651c35;
+    --primary-deep: #2a0b18;
+
+    /* Gold */
+    --secondary: #d4a72c;
+    --secondary-light: #f0c75e;
+
+    /* Borders */
+    --line: rgba(212, 167, 44, 0.18);
+
+    /* Shadows */
+    --shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+
+    background: var(--cream);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+body.dark-mode {
+    background: var(--cream);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode blockquote,
+body.dark-mode .brand-text,
+body.dark-mode .category-links a {
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+body.dark-mode .site-header {
+    background: rgba(15, 11, 13, 0.92);
+    border-bottom-color: rgba(255, 255, 255, 0.10);
+}
+
+body.dark-mode .main-nav a {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+body.dark-mode .main-nav a:hover,
+body.dark-mode .main-nav .nav-active {
+    color: #ffffff;
+}
+
+body.dark-mode .brand-mark {
+    color: var(--secondary-light);
+    border-color: var(--secondary);
+}
+
+body.dark-mode .brand-text small {
+    color: var(--secondary-light);
+}
+
+
+/* =========================================================
+   HEADER CTA
+========================================================= */
+
+body.dark-mode .header-cta {
+    color: #ffffff;
+    background: transparent;
+}
+
+body.dark-mode .header-cta:hover {
+    color: var(--primary-dark);
+    background: var(--secondary-light);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+body.dark-mode .hero-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 4, 7, 0.94) 0%,
+            rgba(30, 8, 18, 0.78) 48%,
+            rgba(10, 5, 8, 0.48) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(8, 4, 7, 0.82),
+            transparent 45%
+        );
+}
+
+body.dark-mode .hero h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .hero-description {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+body.dark-mode .breadcrumb {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* =========================================================
+   FEATURED SECTION
+========================================================= */
+
+body.dark-mode .featured-section {
+    background: var(--cream);
+}
+
+body.dark-mode .featured-card {
+    background: var(--surface);
+    border-color: var(--line);
+    box-shadow: var(--shadow-sm);
+}
+
+body.dark-mode .featured-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+body.dark-mode .featured-content > p {
+    color: var(--muted);
+}
+
+body.dark-mode .article-meta {
+    color: var(--muted);
+}
+
+body.dark-mode .author small {
+    color: var(--muted);
+}
+
+body.dark-mode .author strong {
+    color: var(--text);
+}
+
+body.dark-mode .author-avatar {
+    color: #ffffff;
+    background: var(--primary);
+}
+
+
+/* =========================================================
+   LATEST BLOG SECTION
+========================================================= */
+
+body.dark-mode .latest-section {
+    background: var(--surface-soft);
+}
+
+body.dark-mode .blog-card {
+    background: var(--surface);
+    border-color: var(--line);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode .blog-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+body.dark-mode .card-content > p {
+    color: var(--muted);
+}
+
+body.dark-mode .read-more {
+    color: var(--primary);
+}
+
+body.dark-mode .read-more:hover {
+    color: var(--secondary-light);
+}
+
+
+/* =========================================================
+   CATEGORY FILTER
+========================================================= */
+
+body.dark-mode .category-filter {
+    color: var(--secondary-light);
+    background: transparent;
+    border-color: rgba(212, 167, 44, 0.30);
+}
+
+body.dark-mode .category-filter:hover,
+body.dark-mode .category-filter.active {
+    color: #ffffff;
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   CATEGORIES SECTION
+========================================================= */
+
+body.dark-mode .categories-section {
+    background: var(--cream);
+    border-bottom-color: var(--line);
+}
+
+body.dark-mode .category-links a {
+    color: var(--secondary-light);
+    border-color: rgba(212, 167, 44, 0.28);
+}
+
+body.dark-mode .category-links a:hover {
+    color: #ffffff;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+
+/* =========================================================
+   SECTION HEADING LINE
+========================================================= */
+
+body.dark-mode .heading-line {
+    background: var(--line);
+}
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+body.dark-mode .newsletter-section {
+    background: var(--surface);
+}
+
+body.dark-mode .newsletter-copy > p:last-child {
+    color: var(--muted);
+}
+
+body.dark-mode .newsletter-form {
+    border-bottom-color: var(--secondary);
+}
+
+body.dark-mode .newsletter-form input {
+    color: var(--text);
+}
+
+body.dark-mode .newsletter-form input::placeholder {
+    color: #81777b;
+}
+
+body.dark-mode .newsletter-form button {
+    color: var(--secondary-light);
+}
+
+body.dark-mode .newsletter-form button:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+body.dark-mode .pagination-prev,
+body.dark-mode .pagination-next {
+    color: var(--muted);
+}
+
+body.dark-mode .pagination-pages a {
+    color: var(--secondary-light);
+}
+
+body.dark-mode .pagination-pages .current-page {
+    color: #ffffff;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+
+/* =========================================================
+   WINE CLUB
+========================================================= */
+
+body.dark-mode .wine-club-section {
+    background: var(--cream);
+}
+
+body.dark-mode .wine-club-content > p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+body.dark-mode .wine-club-benefit {
+    border-bottom-color: var(--line);
+}
+
+body.dark-mode .wine-club-benefit h3 {
+    color: var(--primary);
+}
+
+body.dark-mode .wine-club-benefit p {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   WINE CLUB IMAGE DECORATION
+========================================================= */
+
+body.dark-mode .wine-club-image::before {
+    border-color: var(--secondary);
+}
+
+
+/* =========================================================
+   VISIT SECTION
+========================================================= */
+
+body.dark-mode .visit-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7, 4, 6, 0.96),
+            rgba(30, 8, 18, 0.82) 55%,
+            rgba(7, 4, 6, 0.55)
+        ),
+        linear-gradient(
+            0deg,
+            rgba(7, 4, 6, 0.82),
+            transparent
+        );
+}
+
+body.dark-mode .visit-content h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .visit-content > p:not(.eyebrow) {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+body.dark-mode .visit-detail strong {
+    color: #ffffff;
+}
+
+body.dark-mode .visit-detail span:last-child {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+
+/* =========================================================
+   VISIT GLASS CARD
+========================================================= */
+
+body.dark-mode .visit-card {
+    background: rgba(15, 8, 11, 0.58);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+body.dark-mode .visit-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .visit-card p {
+    color: rgba(255, 255, 255, 0.66);
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+body.dark-mode .outline-button {
+    color: #ffffff;
+    border-color: var(--secondary);
+}
+
+body.dark-mode .outline-button:hover {
+    color: var(--primary-dark);
+    background: var(--secondary-light);
+}
+
+
+/* =========================================================
+   QUOTE SECTION
+========================================================= */
+
+body.dark-mode .quote-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 4, 7, 0.92),
+            rgba(40, 10, 25, 0.78),
+            rgba(8, 4, 7, 0.92)
+        );
+}
+
+body.dark-mode blockquote {
+    color: #ffffff;
+}
+
+body.dark-mode .quote-content cite {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+body.dark-mode .cta-section {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(169, 40, 83, 0.38),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #16070d,
+            #4a1027
+        );
+}
+
+body.dark-mode .cta-content h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .cta-content > p:not(.eyebrow) {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+body.dark-mode .site-footer {
+    color: rgba(255, 255, 255, 0.68);
+    background: #090507;
+}
+
+body.dark-mode .footer-brand {
+    color: #ffffff;
+}
+
+body.dark-mode .footer-inner > p {
+    color: rgba(255, 255, 255, 0.48);
+}
+
+body.dark-mode .footer-links a:hover {
+    color: var(--secondary-light);
+}
+
+body.dark-mode .copyright {
+    border-top-color: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.34);
+}
+
+
+/* =========================================================
+   MOBILE DARK MODE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    body.dark-mode .site-header {
+        color: var(--text);
+        background: var(--surface);
+        border-bottom-color: var(--line);
+    }
+
+    body.dark-mode .main-nav a {
+        color: var(--muted);
+    }
+
+    body.dark-mode .main-nav a:hover,
+    body.dark-mode .main-nav .nav-active {
+        color: var(--primary);
+    }
+
+    body.dark-mode .header-cta {
+        color: #ffffff;
+        background: var(--primary);
+    }
+}
  
